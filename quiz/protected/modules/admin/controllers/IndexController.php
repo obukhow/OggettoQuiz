@@ -25,6 +25,11 @@ class IndexController extends Controller
         );
     }
 
+    public function init()
+    {
+        Yii::app()->bootstrap->register();
+    }
+
     /**
      * Set access rules
      *

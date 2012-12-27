@@ -32,8 +32,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'is_multichoice'); ?>
-		<?php echo $form->textField($model,'is_multichoice',array('size'=>1,'maxlength'=>1)); ?>
+		<?php echo $form->label($model,'type'); ?>
+		<?php echo $form->textField($model,'type',array('size'=>1,'maxlength'=>1)); ?>
 	</div>
 
 	<div class="row buttons">

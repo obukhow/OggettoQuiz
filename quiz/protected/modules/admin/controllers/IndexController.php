@@ -60,7 +60,6 @@ class IndexController extends Controller
      */
     public function actionIndex()
     {
-        var_dump(Yii::app()->user); die;
         $this->render('index');
     }
 

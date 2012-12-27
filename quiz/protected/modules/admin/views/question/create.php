@@ -8,11 +8,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Question', 'url'=>array('index')),
-	array('label'=>'Manage Question', 'url'=>array('admin')),
+	array('label'=>'List Questions', 'url'=>array('index')),
 );
 ?>
-
+<?php 
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.tmpl.min.js');
+?>
 <h1>Create Question</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

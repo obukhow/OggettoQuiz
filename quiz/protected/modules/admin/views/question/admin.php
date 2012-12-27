@@ -47,10 +47,14 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'question_id',
-		'section_id',
+		array(
+            // 'filter' => Section::model()->forList(),
+            'name' => 'section_id',
+            'value'=>'$data->section->title'
+        ),
 		'title',
 		'theme',
-		'is_multichoice',
+		'type',
 		array(
             'class'=>'bootstrap.widgets.TbButtonColumn',
             'htmlOptions'=>array('style'=>'width: 50px'),

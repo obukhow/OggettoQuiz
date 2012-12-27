@@ -21,8 +21,8 @@
 	<?php echo CHtml::encode($data->theme); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('is_multichoice')); ?>:</b>
-	<?php echo CHtml::encode($data->is_multichoice); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
+	<?php echo CHtml::encode($data->type); ?>
 	<br />
 
 

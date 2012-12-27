@@ -22,47 +22,107 @@ $section = new Section();
 	<fieldset>
 			<?php echo $form->dropDownListRow($model,'section_id', CHtml::listData($section->findAll(), 'section_id', 'title')); ?>
 			<?php echo $form->textAreaRow($model,'title', array('class'=>'span6', 'rows'=>5)); ?>
-			<?php echo $form->checkBoxRow($model,'is_multichoice'); ?>
+			<?php echo $form->radioButtonListRow($model, 'type', array(
+		        $model::TYPE_ONECHOICE => 'One choice',
+		        $model::TYPE_MULTICHOICE => 'Multiple choice',
+		        $model::TYPE_FREEFORM => 'Free form',
+		        $model::TYPE_POLL => 'Poll'
+		    )
+    	); ?>
 			<?php echo $form->textFieldRow($model,'theme',array('size'=>60,'maxlength'=>500)); ?>
 
 	</fieldset>
 	<legend>Answers</legend>
-		<fieldset>
-			<?php if ($model->answers()): ?>
-				<?php foreach ($model->answers() as $answer): ?>
-					<?php $id = $answer->answer_id; ?>
-					<label class="control-label" for="<?php echo $id ?>">1</label>
-					<div class="controls">
-						<input size="60" class="span5" maxlength="500" name="answers[<?php echo $id ?>][title]" id="<?php echo $id ?>" type="text" value="<?php echo $answer->title ?>">
-						<input type="hidden" name="answers[<?php echo $id ?>][delete]" id="" value=""/>
-						<input name="answers[<?php echo $id ?>][is_correct]" value="1" <?php echo ($answer->is_correct) ? 'checked="checked"' : '' ?> type="checkbox"> Is Correct
-					</div>
-				<?php endforeach; ?>
-			<?php else: ?>
-				<label class="control-label" for="answer_1">1</label>
-				<div class="controls">
-					<input size="60" class="span5" maxlength="500" name="answers[val_1][title]" id="answer_1" type="text">
-					<input type="hidden" name="answers[val_1][delete]" id="" value=""/>
-					<input name="answers[val_1][is_correct]" value="1" type="checkbox"> Is Correct
-				</div>
-
-				<label class="control-label" for="answer_2">2</label>
-				<div class="controls">
-					<input size="60" class="span5" maxlength="500" name="answers[val_2][title]" id="answer_2" type="text">
-					<input type="hidden" name="answers[val_2][delete]" id="" value=""/>
-					<input name="answers[val_2][is_correct]" value="1" type="checkbox"> Is Correct
-				</div>
-			<?php endif; ?>
+		<fieldset id="answers-fieldset">
+				<?php $this->widget('bootstrap.widgets.TbButton', array(
+				    'label'=>'Add',
+				    'type' => 'success',
+				    'htmlOptions' => array(
+				    	'id'   => 'addButton'
+				    	),
+				)); ?>
 		</fieldset>
 	<div class="form-actions">
 		<?php if ($model->isNewRecord): ?>
 	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'Create')); ?>
-	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'Save And Create New')); ?>
+	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'button', 'type'=>'primary', 'label'=>'Save And Create New')); ?>
 	    <?php else: ?>
 	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=> 'Save')); ?>
 	    <?php endif; ?>
 	</div>
 
 <?php $this->endWidget(); ?>
+<script id="rowTemplate" type="text/x-jquery-tmpl">
+	<div id="row_${answer_id}" class="answer-row">
+		<label class="control-label" for="${answer_id}">${number}</label>
+		<div class="controls">
+			<input size="60" class="span5" maxlength="500" name="answers[${answer_id}][title]" value="${title}" type="text">
+			<input type="hidden" name="answers[${answer_id}][deleted]" value=""/>
+			<input name="answers[${answer_id}][is_correct]" value="1" type="checkbox" {{if is_correct==1}}checked="checked"{{/if}}> Is Correct
+			{{if can_delete==1}}<?php $this->widget('bootstrap.widgets.TbButton', array(
+				    'label' =>'Delete',
+				    'type'  => 'danger',
+				    'size'  => 'mini',
+				    'htmlOptions' => array(
+					    'class' => 'delete-row',
+				    	),
+				)); ?>{{/if}}
+		</div>
+	</div>
+</script>
+<script type="text/javascript">
+attributeOption = {
+    table : $('#answers-fieldset'),
+    template: $('#rowTemplate'),
+    itemCount : 1,
 
+    add : function(data) {
+    	if (!data) {
+    		data = {
+    			answer_id : 'val_' + this.itemCount,
+    			title : '',
+    			is_correct: 0,
+    		};
+    	}
+    	data.number = this.itemCount;
+    	data.can_delete = (this.itemCount > 1) ? 1 : 0;
+    	this.template.tmpl(data).insertBefore('#addButton');
+
+        this.bindRemoveButtons();
+        this.itemCount++;
+    },
+    remove : function(element){
+    	dddd = element;
+        var row = $(element).parents('div.answer-row');
+        row.hide();
+        $(element).prevAll('input[type=hidden]').val(1);
+    },
+    bindRemoveButtons : function(){
+    	self = this;
+    	$('.delete-row').click(function() {
+				self.remove(this)
+    		}
+    	);
+    },
+
+    addValidationObserver: function() {
+
+    }
+    
+
+}
+$(document).ready(function() {
+	$('#addButton').click(function() {
+		attributeOption.add();
+	});
+});
+
+<?php if ($model->answers()): ?>
+	<?php foreach ($model->answers() as $answer): ?>
+		attributeOption.add(<?php echo $answer->toJson() ?>);
+	<?php endforeach; ?>
+<?php else: ?>
+	attributeOption.add();
+<?php endif; ?>
+</script>
 </div><!-- form -->

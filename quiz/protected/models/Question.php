@@ -8,7 +8,7 @@
  * @property integer $section_id
  * @property string $title
  * @property string $theme
- * @property string $is_multichoice
+ * @property string $type
  *
  * The followings are the available model relations:
  * @property QuizSections $section
@@ -16,6 +16,11 @@
  */
 class Question extends CActiveRecord
 {
+    const TYPE_ONECHOICE   = 0;
+    const TYPE_MULTICHOICE = 1;
+    const TYPE_FREEFORM    = 2;
+    const TYPE_POLL        = 3;
+
     /**
      * Returns the static model of the specified AR class.
      * @param string $className active record class name.
@@ -46,10 +51,10 @@ class Question extends CActiveRecord
             array('section_id', 'numerical', 'integerOnly'=>true),
             array('title', 'length', 'max'=>255),
             array('theme', 'length', 'max'=>500),
-            array('is_multichoice', 'length', 'max'=>1),
+            array('type', 'length', 'max'=>1),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('question_id, section_id, title, theme, is_multichoice', 'safe', 'on'=>'search'),
+            array('question_id, section_id, title, theme, type', 'safe', 'on'=>'search'),
         );
     }
 
@@ -76,7 +81,7 @@ class Question extends CActiveRecord
             'section_id' => 'Section',
             'title' => 'Title',
             'theme' => 'Theme',
-            'is_multichoice' => 'Is Multichoice',
+            'type' => 'Type',
         );
     }
 
@@ -95,7 +100,7 @@ class Question extends CActiveRecord
         $criteria->compare('section_id',$this->section_id);
         $criteria->compare('title',$this->title,true);
         $criteria->compare('theme',$this->theme,true);
-        $criteria->compare('is_multichoice',$this->is_multichoice,true);
+        $criteria->compare('type',$this->type,true);
 
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,

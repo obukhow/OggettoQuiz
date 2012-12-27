@@ -8,11 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Question', 'url'=>array('index')),
+	array('label'=>'List Questions', 'url'=>array('index')),
 	array('label'=>'Create Question', 'url'=>array('create')),
 	array('label'=>'Update Question', 'url'=>array('update', 'id'=>$model->question_id)),
 	array('label'=>'Delete Question', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->question_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Question', 'url'=>array('admin')),
 );
 ?>
 
@@ -25,6 +24,6 @@ $this->menu=array(
 		'section_id',
 		'title',
 		'theme',
-		'is_multichoice',
+		'type',
 	),
 )); ?>

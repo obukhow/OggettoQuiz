@@ -22,13 +22,7 @@ $section = new Section();
 	<fieldset>
 			<?php echo $form->dropDownListRow($model,'section_id', CHtml::listData($section->findAll(), 'section_id', 'title')); ?>
 			<?php echo $form->textAreaRow($model,'title', array('class'=>'span6', 'rows'=>5)); ?>
-			<?php echo $form->radioButtonListRow($model, 'type', array(
-		        $model::TYPE_ONECHOICE => 'One choice',
-		        $model::TYPE_MULTICHOICE => 'Multiple choice',
-		        $model::TYPE_FREEFORM => 'Free form',
-		        $model::TYPE_POLL => 'Poll'
-		    )
-    	); ?>
+			<?php echo $form->radioButtonListRow($model, 'type', $model->getTypeOptions()); ?>
 			<?php echo $form->textFieldRow($model,'theme',array('size'=>60,'maxlength'=>500)); ?>
 
 	</fieldset>

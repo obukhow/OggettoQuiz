@@ -116,6 +116,8 @@ class QuestionController extends AbstractController
     {
         $model=new Question('search');
         $model->unsetAttributes();
+        if(isset($_GET['Question']))
+            $model->attributes=$_GET['Question'];
         $this->render('admin',array(
             'model' => $model,
         ));

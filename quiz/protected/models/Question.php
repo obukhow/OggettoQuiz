@@ -86,6 +86,35 @@ class Question extends CActiveRecord
     }
 
     /**
+     * Get question type option
+     *
+     * @return array
+     */
+    public function getTypeOptions()
+    {
+        return array(
+                self::TYPE_ONECHOICE   => 'One choice',
+                self::TYPE_MULTICHOICE => 'Multiple choice',
+                self::TYPE_FREEFORM    => 'Free form',
+                self::TYPE_POLL        => 'Poll'
+            );
+    }
+
+    /**
+     * Get type of question string
+     *
+     * @return string
+     */
+    public function getTypeOptionValue()
+    {
+        $options = $this->getTypeOptions();
+        if (array_key_exists($this->type, $options)) {
+            return $options[$this->type];
+        }
+        return null;
+    }
+
+    /**
      * Retrieves a list of models based on the current search/filter conditions.
      * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
      */
@@ -98,6 +127,8 @@ class Question extends CActiveRecord
 
         $criteria->compare('question_id',$this->question_id);
         $criteria->compare('section_id',$this->section_id);
+        // $criteria->with = 'section';
+        // $criteria->compare('section', $this->section->title);
         $criteria->compare('title',$this->title,true);
         $criteria->compare('theme',$this->theme,true);
         $criteria->compare('type',$this->type,true);

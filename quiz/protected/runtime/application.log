@@ -4268,3 +4268,1043 @@ Stack trace:
 REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
 HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
 ---
+2012/12/28 12:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:33:56 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/
+---
+2012/12/28 12:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:34:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:34:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/glyphicons-halflings.png".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('img/glyphicons-...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/glyphicons-halflings.png
+HTTP_REFERER=http://quiz.local/css/bootstrap.min.css
+---
+2012/12/28 12:37:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:38:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:38:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 12:40:32 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 13:31:14 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 14:04:31 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 14:05:33 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 14:05:34 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 14:05:34 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 14:05:35 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 14:05:35 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1890): tag()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/helpers/CHtml.php(1217): activeInputField()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CDataColumn.php(98): activeTextField()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php(53): TbDataColumn->renderFilterCellContent()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(477): TbDataColumn->renderFilterCell()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(455): TbGridView->renderFilter()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(425): TbGridView->renderTableHeader()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(161): TbGridView->renderItems()
+#9 unknown(0): TbGridView->renderSection()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/CBaseListView.php(129): TbGridView->renderContent()
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(174): TbGridView->run()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(51): SectionController->widget()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require()
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SectionController->renderInternal()
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SectionController->renderFile()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SectionController->renderPartial()
+#18 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): SectionController->render()
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): SectionController->runAction()
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): SectionController->filterAccessControl()
+#25 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#26 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#27 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SectionController->runActionWithFilters()
+#28 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SectionController->run()
+#29 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#30 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/admin/section/admin
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbDataColumn.php (53)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php (51)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php (107)
+2012/12/28 14:20:01 [error] [exception.CException] exception 'CException' with message 'Property "TbDataColumn.filte" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/YiiBase.php(222): CComponent->__set('filte', false)
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(336): YiiBase::createComponent(Array, Object(TbGridView))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbGridView.php(91): CGridView->initColumns()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/zii/widgets/grid/CGridView.php(307): TbGridView->initColumns()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/extensions/bootstrap/widgets/TbGridView.php(49): CGridView->init()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(148): TbGridView->init()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/views/section/admin.php(52): CBaseController->widget('bootstrap.widge...', Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/denisobu...')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisobu...', Array, true)
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisobu...', Array, true)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/SectionController.php(107): CController->render('admin', Array)
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SectionController->actionAdmin()
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#21 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('admin')
+#23 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/section/a...')
+#24 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/admin/section/admin
+HTTP_REFERER=http://quiz.local/index.php/admin/section
+---
+2012/12/28 14:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 14:20:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 14:20:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 14:22:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 14:22:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 14:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/28 14:46:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "README.MD".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('README.MD')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/README.MD
+---
+2012/12/28 16:47:35 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/
+---
+2012/12/28 16:47:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 10:04:42 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin
+---
+2012/12/29 10:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 10:05:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 10:05:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 10:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 10:13:52 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/
+---
+2012/12/29 10:43:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/
+---
+2012/12/29 10:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "variable1".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('variable1')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('variable1')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/variable1/...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:52:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('index')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('index')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('index')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('index')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('index')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('index')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:53:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:53:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:53:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:53:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:53:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index/vari...')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 10:57:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "variable1".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('variable1')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('variable1')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/variable1')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/variable1
+---
+2012/12/29 11:51:17 [error] [php] Invalid argument supplied for foreach() (/Users/denisobukhov/projects/oggettoquiz/framework/db/schema/CDbCommandBuilder.php:546)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(25): QuizController->_initSection()
+#1 unknown(0): QuizController->actionShowQuestion()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/variable1/variable2
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (46)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (25)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2012/12/29 11:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php:48
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(25): QuizController->_initSection('variable1')
+#1 [internal function]: QuizController->actionShowQuestion('variable1', 'variable2')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('showQuestion')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/showQuesti...')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/quiz/variable1/variable2
+---
+2012/12/29 12:20:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:20:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:20:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:20:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:21:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:21:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 12:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "action".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('action')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('action')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/action')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/variable2
+---
+2012/12/29 12:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "variable2".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('variable2')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('variable2')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/variable2')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/variable2
+---
+2012/12/29 12:22:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "variable2".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('variable2')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('variable2')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/variable2')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/variable2
+---
+2012/12/29 12:38:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "start".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('start')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('start')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/start')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/start
+---
+2012/12/29 13:49:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/php/index
+---
+2012/12/29 13:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2012/12/29 13:56:47 [error] [php] Undefined variable: questionsCount (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php:4)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(35): QuizController->render()
+#3 unknown(0): QuizController->actionIndex()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/index
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php (4)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (35)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2012/12/29 13:57:08 [error] [php] Undefined variable: questionCount (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php:4)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(35): QuizController->render()
+#3 unknown(0): QuizController->actionIndex()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/index
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php (4)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (35)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2012/12/29 13:57:10 [error] [php] Undefined variable: questionCount (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php:4)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(35): QuizController->render()
+#3 unknown(0): QuizController->actionIndex()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/index
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php (4)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (35)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)

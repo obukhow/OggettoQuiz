@@ -20,3 +20,14 @@
     });
 
 })(window);
+function OggettoQuiz(questionsCount)
+{
+    this.count = questionsCount;
+    this._init();
+    this.start = function() {
+        alert(1);
+    }
+    this._init = function() {
+        alert(2);
+    }
+}

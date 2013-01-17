@@ -21,25 +21,8 @@
 
 <body>
 
-	<div id="mainmenu">
-		<?php $this->widget('bootstrap.widgets.TbNavbar',array(
-			'brand'=>'Quiz Manager',
-			'items'=>array(
-				array(
-					'class' =>'bootstrap.widgets.TbMenu',
-					'items' => array(
-						array('label'=>'Home', 'url'=>array('/site/index')),
-						array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-						array('label'=>'Contact', 'url'=>array('/site/contact')),
-						array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-					)
-				)
-			),
-		)); ?>
-	</div>
 <div class="container" id="page">
-
+	<img src="<?php echo Yii::app()->request->baseUrl ?>/images/clear_logo.png" class="logo"/>
 
 	<!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
@@ -54,9 +37,8 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		&copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->

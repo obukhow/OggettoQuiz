@@ -7029,3 +7029,199 @@ Stack trace:
 REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
 HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
 ---
+2013/01/17 15:56:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/17 15:56:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/17 15:58:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/grey_jean.css".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('images/grey_jea...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/grey_jean.css
+HTTP_REFERER=http://quiz.local/css/main.css
+---
+2013/01/17 15:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/grey_jean.css".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('images/grey_jea...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/grey_jean.css
+HTTP_REFERER=http://quiz.local/css/main.css
+---
+2013/01/17 15:58:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/grey_jean.png".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('images/grey_jea...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/grey_jean.png
+HTTP_REFERER=http://quiz.local/css/main.css
+---
+2013/01/17 15:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/grey_jean.png".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('images/grey_jea...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/grey_jean.png
+HTTP_REFERER=http://quiz.local/css/main.css
+---
+2013/01/17 15:59:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/grey_jean.png".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('images/grey_jea...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/grey_jean.png
+HTTP_REFERER=http://quiz.local/css/main.css
+---
+2013/01/17 16:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clear_logo.png".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('clear_logo.png')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/clear_logo.png
+HTTP_REFERER=http://quiz.local/
+---
+2013/01/17 16:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clear_logo.png".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('clear_logo.png')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/clear_logo.png
+HTTP_REFERER=http://quiz.local/
+---
+2013/01/17 16:17:47 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/
+---
+2013/01/17 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:17:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:18:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:18:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:18:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/quiz
+---
+2013/01/17 16:25:10 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/index.php/admin
+---
+2013/01/17 16:33:36 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/index.php/admin
+---

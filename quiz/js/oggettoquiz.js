@@ -27,6 +27,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     this.nextBtn   = $('#nextBtn');
     this.finishBtn = $('#finishBtn');
     this.content   = $('#page-content');
+    this.question  = '#question';
     this.cache     = new Array;
     this.currentUrl;
 
@@ -50,15 +51,41 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     this._beforeStep = function() {
         if (this.getCache(this.currentUrl)) {
             var cache = this.getCache(this.currentUrl);
-            cache.html = this.content.clone();
+            cache.html = this.cloneContent();
             this.saveCache(this.currentUrl, cache);
         }
+        this.saveQuestion();
     }
 
     this._afterStep = function() {
         this.renderButtons();
         url = "question/" + this.currentQuestion;
         this.updateContent(url);
+    }
+
+    this.cloneContent = function(){
+        var original = $(this.question);
+        var cloned = original.clone();
+
+        var originalElems = original.find('select, textarea');
+        cloned.find('select, textarea').each(function(index, item) {
+            //set new element to value of old element
+            $(item).val( originalElems.eq(index).val() );
+        });
+
+        return cloned;
+    }
+
+    this.saveQuestion = function() {
+        contentCurrent = this.content.serialize();
+        if(contentCached !== contentCurrent) {
+            $.post(
+                baseUrl + '/' + url,
+                this.content.serialize(),
+                function(response) {
+                }
+            );
+        }
     }
 
     this.renderButtons = function() {
@@ -85,22 +112,22 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         var self = this;
         if (this.getCache(url)) {
             this._update(url, this.getCache(url));
+            contentCached = this.content.serialize();
         } else {
-            $.get(baseUrl + '/' + url, function(response) {
-                self.saveCache(url, response);
-                self._update(url, response);
-            });
+            $.get(
+                baseUrl + '/' + url,
+                function(response) {
+                    self.saveCache(url, response);
+                    self._update(url, response);
+                    contentCached = this.content.serialize();
+                }.bind(this)
+            );
         }
         this.currentUrl = url;
     }
 
     this._update = function(url, data) {
-        if (typeof(data.html == 'object')) {
-            this.content.replaceWith(data.html);
-            this.content = data.html;
-        } else {
-            this.content.html(data.html);
-        }
+        this.content.html(data.html);
         this.changeState(data.title, url);
     }
 

@@ -80,6 +80,12 @@ body
 	background-color:#EFF4FA;
 	text-decoration:none;
 }
+h1 {
+	text-shadow: 1px 1px 0 #fff;
+	font-family: 'Lobster', cursive !important;
+	font-weight: normal !important;
+	margin-bottom: 0.6em !important;
+}
 
 div.flash-error, div.flash-notice, div.flash-success
 {

@@ -12,6 +12,8 @@ class QuizController extends Controller
         Yii::app()->getClientScript()->registerCoreScript('jquery');
         Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/oggettoquiz.js');
         Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/history.adapter.jquery.js');
+        $markdown = new CMarkdown;
+        $markdown->registerClientScript();
 
     }
     public function actionPostQuestion()

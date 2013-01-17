@@ -11,6 +11,7 @@ class QuizController extends Controller
     {
         Yii::app()->getClientScript()->registerCoreScript('jquery');
         Yii::app()->getClientScript()->registerScriptFile('/js/oggettoquiz.js');
+        Yii::app()->getClientScript()->registerScriptFile('/js/history.adapter.jquery.js');
 
     }
     public function actionPostQuestion()
@@ -31,19 +32,34 @@ class QuizController extends Controller
      *
      * @return [type]           [description]
      */
-    public function actionShowQuestion($section, $question)
+    public function actionQuestion($section, $id)
     {
         $section = $this->_initSection($section);
+        $question = $this->_initQuestion($section, $id);
+        if (Yii::app()->getRequest()->getIsAjaxRequest()) {
+            $result = array(
+                'html'  => $this->renderPartial('question', array('question' => $question), true),
+                'title' => sprintf('Question %s', $id),
+            );
+            header("Content-type: application/json");
+            echo CJSON::encode($result);
+            Yii::app()->end();
+        }
         
-        $this->render('showQuestion');
+        $this->render('question', array('question' => $question));
     }
 
+    /**
+     * index action
+     *
+     * @param string $section section
+     *
+     * @return void
+     */
     public function actionIndex($section)
     {
         $section = $this->_initSection($section);
-        $questionCount = count($section->questions);
-        var_dump($questionCount);
-        $this->render('index');
+        $this->render('index', array('section' => $section));
 
     }
 
@@ -61,33 +77,24 @@ class QuizController extends Controller
             throw new CHttpException(404,'The requested page does not exist.');
         }
         return $section;
-
     }
 
-    // Uncomment the following methods and override them if needed
-    /*
-    public function filters()
+    /**
+     * init question
+     *
+     * @param  [type] $section [description]
+     * @param  [type] $id      [description]
+     *
+     * @return [type]          [description]
+     */
+    protected function _initQuestion($section, $id)
     {
-        // return the filter configuration for this controller, e.g.:
-        return array(
-            'inlineFilterName',
-            array(
-                'class'=>'path.to.FilterClass',
-                'propertyName'=>'propertyValue',
-            ),
-        );
+        $criteria = new CDbCriteria;
+        $criteria->addCondition('t.section_id = :section_id');
+        $criteria->limit = 1;
+        $criteria->offset = ($id <= 0) ? 1 : $id - 1;
+        $criteria->params= array(':section_id' => $section->section_id);
+        $question = Question::model()->find($criteria);
+        return $question;
     }
-
-    public function actions()
-    {
-        // return external action classes, e.g.:
-        return array(
-            'action1'=>'path.to.ActionClass',
-            'action2'=>array(
-                'class'=>'path.to.AnotherActionClass',
-                'propertyName'=>'propertyValue',
-            ),
-        );
-    }
-    */
 }

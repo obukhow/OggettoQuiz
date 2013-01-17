@@ -5332,3 +5332,1700 @@ Stack trace:
 #19 {main}
 REQUEST_URI=/quiz/php/index
 ---
+2013/01/14 18:51:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/
+---
+2013/01/14 18:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/
+---
+2013/01/15 10:35:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 12:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/3
+---
+2013/01/15 12:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/
+---
+2013/01/15 12:07:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:07:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/5
+---
+2013/01/15 12:34:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/10
+---
+2013/01/15 12:37:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/9
+---
+2013/01/15 12:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/8
+---
+2013/01/15 12:37:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/7
+---
+2013/01/15 12:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/6
+---
+2013/01/15 12:37:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/5
+---
+2013/01/15 12:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/4
+---
+2013/01/15 12:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/4
+---
+2013/01/15 12:37:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/3
+---
+2013/01/15 12:37:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/2
+---
+2013/01/15 12:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:37:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:39:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:39:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:39:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:40:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/6
+---
+2013/01/15 12:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 12:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/question/question/question/question/question/question/question/question/question/question/question/question/question/6
+---
+2013/01/15 12:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/8
+---
+2013/01/15 13:14:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php
+---
+2013/01/15 13:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "question".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('question')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question/q...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/question/question/question/question/question/6
+---
+2013/01/15 13:23:44 [error] [exception.CException] exception 'CException' with message 'Property "QuizController.section" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php(5): CComponent->__get('section')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/denisobu...')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisobu...', NULL, true)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisobu...', NULL, true)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#5 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(47): CController->render('index')
+#6 [internal function]: QuizController->actionIndex('php')
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index')
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/quiz/php/
+---
+2013/01/15 13:28:35 [error] [exception.CException] exception 'CException' with message 'Property "Section.name" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(45): CActiveRecord->__get('name')
+#2 [internal function]: QuizController->actionIndex('php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index')
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/php/
+---
+2013/01/15 13:29:17 [error] [exception.CException] exception 'CException' with message 'Property "QuizController.url" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/index.php(47): CComponent->__get('url')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/denisobu...')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisobu...', Array, true)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisobu...', Array, true)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(46): CController->render('index', Array)
+#6 [internal function]: QuizController->actionIndex('php')
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index')
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/quiz/php/
+---
+2013/01/15 13:33:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/quiz/p...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/quiz/phpquestion/quiz/phpquestion/2
+---
+2013/01/15 13:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/6
+---
+2013/01/15 13:35:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/
+---
+2013/01/15 13:52:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+---
+2013/01/15 13:53:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/1
+---
+2013/01/15 13:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/1
+HTTP_REFERER=http://quiz.local/quiz/php
+---
+2013/01/15 13:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/2
+HTTP_REFERER=http://quiz.local/quiz/php/question/1
+---
+2013/01/15 13:53:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+HTTP_REFERER=http://quiz.local/quiz/php/question/2
+---
+2013/01/15 13:53:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/4
+HTTP_REFERER=http://quiz.local/quiz/php/question/3
+---
+2013/01/15 13:53:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/5
+HTTP_REFERER=http://quiz.local/quiz/php/question/4
+---
+2013/01/15 13:53:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/6
+HTTP_REFERER=http://quiz.local/quiz/php/question/5
+---
+2013/01/15 13:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/7
+HTTP_REFERER=http://quiz.local/quiz/php/question/6
+---
+2013/01/15 13:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/8
+HTTP_REFERER=http://quiz.local/quiz/php/question/7
+---
+2013/01/15 13:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/9
+HTTP_REFERER=http://quiz.local/quiz/php/question/8
+---
+2013/01/15 13:53:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 13:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/9
+HTTP_REFERER=http://quiz.local/quiz/php/question/10
+---
+2013/01/15 13:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/8
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 13:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/7
+HTTP_REFERER=http://quiz.local/quiz/php/question/8
+---
+2013/01/15 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/6
+HTTP_REFERER=http://quiz.local/quiz/php/question/7
+---
+2013/01/15 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/5
+HTTP_REFERER=http://quiz.local/quiz/php/question/6
+---
+2013/01/15 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/4
+HTTP_REFERER=http://quiz.local/quiz/php/question/5
+---
+2013/01/15 13:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+HTTP_REFERER=http://quiz.local/quiz/php/question/4
+---
+2013/01/15 13:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/2
+HTTP_REFERER=http://quiz.local/quiz/php/question/3
+---
+2013/01/15 13:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/1
+HTTP_REFERER=http://quiz.local/quiz/php/question/2
+---
+2013/01/15 13:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/0
+HTTP_REFERER=http://quiz.local/quiz/php/question/1
+---
+2013/01/15 13:53:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/1
+HTTP_REFERER=http://quiz.local/quiz/php/question/0
+---
+2013/01/15 13:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/1
+---
+2013/01/15 13:54:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/1
+HTTP_REFERER=http://quiz.local/quiz/php/
+---
+2013/01/15 13:54:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/2
+HTTP_REFERER=http://quiz.local/quiz/php/question/1
+---
+2013/01/15 13:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+HTTP_REFERER=http://quiz.local/quiz/php/question/2
+---
+2013/01/15 13:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/4
+HTTP_REFERER=http://quiz.local/quiz/php/question/3
+---
+2013/01/15 13:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/5
+HTTP_REFERER=http://quiz.local/quiz/php/question/4
+---
+2013/01/15 13:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/6
+HTTP_REFERER=http://quiz.local/quiz/php/question/5
+---
+2013/01/15 13:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/7
+HTTP_REFERER=http://quiz.local/quiz/php/question/6
+---
+2013/01/15 13:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/8
+HTTP_REFERER=http://quiz.local/quiz/php/question/7
+---
+2013/01/15 13:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/9
+HTTP_REFERER=http://quiz.local/quiz/php/question/8
+---
+2013/01/15 13:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 13:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/9
+HTTP_REFERER=http://quiz.local/quiz/php/question/10
+---
+2013/01/15 13:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/8
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 13:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/7
+HTTP_REFERER=http://quiz.local/quiz/php/question/8
+---
+2013/01/15 13:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/6
+HTTP_REFERER=http://quiz.local/quiz/php/question/7
+---
+2013/01/15 13:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/5
+HTTP_REFERER=http://quiz.local/quiz/php/question/6
+---
+2013/01/15 13:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/4
+HTTP_REFERER=http://quiz.local/quiz/php/question/5
+---
+2013/01/15 13:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+HTTP_REFERER=http://quiz.local/quiz/php/question/4
+---
+2013/01/15 13:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/2
+HTTP_REFERER=http://quiz.local/quiz/php/question/3
+---
+2013/01/15 13:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/1
+HTTP_REFERER=http://quiz.local/quiz/php/question/2
+---
+2013/01/15 13:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/2
+HTTP_REFERER=http://quiz.local/quiz/php/question/1
+---
+2013/01/15 13:54:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+HTTP_REFERER=http://quiz.local/quiz/php/question/2
+---
+2013/01/15 13:54:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/4
+HTTP_REFERER=http://quiz.local/quiz/php/question/3
+---
+2013/01/15 13:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/5
+HTTP_REFERER=http://quiz.local/quiz/php/question/4
+---
+2013/01/15 13:57:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/2
+---
+2013/01/15 13:58:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "question".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('question')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/
+---
+2013/01/15 13:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 13:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 13:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 13:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 13:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 13:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 13:59:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "question".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('question')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 13:59:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 14:00:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/php/question/3
+---
+2013/01/15 14:00:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/php/question/
+---
+2013/01/15 14:00:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/php/question/
+---
+2013/01/15 14:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 14:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 14:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 14:55:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 15:12:11 [error] [php] Undefined variable: question (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(47): QuizController->render()
+#3 unknown(0): QuizController->actionQuestion()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/9
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (47)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 15:45:12 [error] [php] Undefined variable: question (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(47): QuizController->render()
+#3 unknown(0): QuizController->actionQuestion()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/9
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (47)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:05:38 [error] [php] Undefined variable: question (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(48): QuizController->render()
+#3 unknown(0): QuizController->actionQuestion()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/9
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (48)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:06:15 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(48): QuizController->render()
+#3 unknown(0): QuizController->actionQuestion()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/9
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (48)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:11:17 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(48): QuizController->render()
+#3 unknown(0): QuizController->actionQuestion()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/1
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (48)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:20:30 [error] [php] Undefined variable: question (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/1
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:21:49 [error] [php] Undefined variable: question (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/1
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:22 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/6
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:25 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/7
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:26 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/8
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:27 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/9
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/php/questi...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/php/question/10
+HTTP_REFERER=http://quiz.local/quiz/php/question/9
+---
+2013/01/15 16:23:30 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/9
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:31 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/8
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:32 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/7
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 16:23:32 [error] [php] Trying to get property of non-object (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:6)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(41): QuizController->renderPartial()
+#2 unknown(0): QuizController->actionQuestion()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/question/6
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (6)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (41)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/15 17:33:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/15 17:34:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/15 17:34:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/15 17:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:57:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:59:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:59:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 17:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:01:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:01:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:03:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:04:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:05:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:06:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:09:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:12:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:30:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:33:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:33:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:33:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:34:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/15 18:34:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/16 10:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/16 10:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/16 10:24:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---

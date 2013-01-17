@@ -31,6 +31,26 @@ class Section extends CActiveRecord
 	}
 
 	/**
+	 * Get Section Url
+	 *
+	 * @return string
+	 */
+	public function getUrl()
+	{
+		return '/quiz/' . strtolower($this->title);
+	}
+
+	/**
+	 * Get section questions count
+	 *
+	 * @return int
+	 */
+	public function getQuestionsCount()
+	{
+		return Question::model()->count("section_id=:section_id", array("section_id" => $this->section_id));
+	}
+
+	/**
 	 * @return array validation rules for model attributes.
 	 */
 	public function rules()

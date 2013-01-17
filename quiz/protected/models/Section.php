@@ -37,7 +37,7 @@ class Section extends CActiveRecord
 	 */
 	public function getUrl()
 	{
-		return '/quiz/' . strtolower($this->title);
+		return Yii::app()->getRequest()->getBaseUrl() . '/quiz/' . strtolower($this->title);
 	}
 
 	/**

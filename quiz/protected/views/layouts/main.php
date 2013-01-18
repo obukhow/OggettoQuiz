@@ -22,27 +22,27 @@
 
 <body>
 
-<div class="container" id="page">
-	<img src="<?php echo Yii::app()->request->baseUrl ?>/images/clear_logo.png" class="logo"/>
+	<div class="container" id="page">
+		<img src="<?php echo Yii::app()->request->baseUrl ?>/images/clear_logo.png" class="logo"/>
 
-	<!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+		<!-- mainmenu -->
+		<?php if(isset($this->breadcrumbs)):?>
+			<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
+				'links'=>$this->breadcrumbs,
+			)); ?><!-- breadcrumbs -->
+		<?php endif?>
 
-		
-	<?php echo $content; ?>
+			
+		<?php echo $content; ?>
 
-	<div class="clear"></div>
+		<div class="clear"></div>
 
-	<div id="footer">
-		&copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
-		All Rights Reserved.<br/>
-	</div><!-- footer -->
+		<div id="footer">
+			&copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
+			All Rights Reserved.<br/>
+		</div><!-- footer -->
 
-</div><!-- page -->
-
+	</div><!-- page -->
+	<div class="curtain" id="curtain"></div>
 </body>
 </html>

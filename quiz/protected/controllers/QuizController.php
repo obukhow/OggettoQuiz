@@ -48,7 +48,11 @@ class QuizController extends Controller
             Yii::app()->end();
         }
         
-        $this->render('question', array('question' => $question));
+        $this->render('index', array('section' => $section, 'question' => $question, 'number' => $id));
+    }
+    public function actionAjaxquestion($section, $id)
+    {
+        return $this->actionQuestion($section, $id);
     }
 
     /**
@@ -61,7 +65,7 @@ class QuizController extends Controller
     public function actionIndex($section)
     {
         $section = $this->_initSection($section);
-        $this->render('index', array('section' => $section));
+        $this->render('index', array('section' => $section, 'question' => null, 'number' => 0));
 
     }
 

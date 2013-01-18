@@ -50,4 +50,8 @@ $this->breadcrumbs=array(
 	</div>
 
 <?php $this->endWidget(); ?>
+
+<?php
+    $this->widget('ext.eauth.EAuthWidget', array('action' => 'site/login'));
+?>
 </div><!-- form -->

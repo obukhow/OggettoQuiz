@@ -77,6 +77,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		$this->socialLogin();
 		$model=new LoginForm;
 
 		// if it is ajax validation request
@@ -105,5 +106,42 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+
+	/**
+	 * Social network login
+	 *
+	 * @return void
+	 */
+	public function socialLogin()
+	{
+		$service = Yii::app()->request->getQuery('service');
+        if (isset($service)) {
+            $authIdentity = Yii::app()->eauth->getIdentity($service);
+            $authIdentity->redirectUrl = Yii::app()->user->returnUrl;
+            $authIdentity->cancelUrl = $this->createAbsoluteUrl('site/login');
+
+            if ($authIdentity->authenticate()) {
+                $identity = new EAuthUserIdentity($authIdentity);
+
+                // successful authentication
+                if ($identity->authenticate()) {
+                	$userIdentity = User::model()->handleIdentity($identity);
+                	$userIdentity->setForceLogin(true);
+                	$userIdentity->authenticate();
+                    Yii::app()->user->login($userIdentity);
+
+                    // special redirect with closing popup window
+                    $authIdentity->redirect();
+                }
+                else {
+                    // close popup window and redirect to cancelUrl
+                    $authIdentity->cancel();
+                }
+            }
+
+            // Something went wrong, redirect to login page
+            $this->redirect(array('site/login'));
+        }
 	}
 }

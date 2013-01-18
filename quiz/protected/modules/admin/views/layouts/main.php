@@ -30,7 +30,7 @@
                                 array('label'=>'Sections', 'url'=>array('/admin/section')),
                                 array('label'=>'Questions', 'url'=>array('/admin/question')),
                             )),
-                        array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                        array('label'=>'Users', 'url'=>array('/admin/user/admin')),
                         array('label'=>'Contact', 'url'=>array('/site/contact')),
                         array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

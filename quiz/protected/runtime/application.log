@@ -7225,3 +7225,1101 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/quiz/index.php/admin
 ---
+2013/01/17 16:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:48:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:49:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 16:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:04:42 [error] [exception.CException] exception 'CException' with message 'QuizController and its behaviors do not have a method or closure named "transform".' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/widgets/CMarkdown.php(57): CComponent->__call('transform', Array)
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/widgets/CMarkdown.php(57): QuizController->transform('What is the out...')
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php(8): CMarkdown->processOutput('What is the out...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/denisobu...')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisobu...', Array, true)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisobu...', Array, true)
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('question', Array, true)
+#7 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(49): CController->render('question', Array)
+#8 [internal function]: QuizController->actionQuestion('php', '6')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/quiz/php/question/6
+---
+2013/01/17 17:05:24 [error] [exception.CException] exception 'CException' with message 'QuizController and its behaviors do not have a method or closure named "transform".' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/widgets/CMarkdown.php(57): CComponent->__call('transform', Array)
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/widgets/CMarkdown.php(57): QuizController->transform('Poll question')
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php(8): CMarkdown->processOutput('Poll question')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/denisobu...')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisobu...', Array, true)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisobu...', Array, true)
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('question', Array, true)
+#7 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(49): CController->render('question', Array)
+#8 [internal function]: QuizController->actionQuestion('php', '5')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('question')
+#15 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/question')
+#16 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/quiz/php/question/5
+---
+2013/01/17 17:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:09:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:09:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:14:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:16:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:27:16 [error] [exception.CException] exception 'CException' with message 'Property "QuizController.cssFile" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/widgets/CMarkdown.php(83): CComponent->__get('cssFile')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(15): CMarkdown->registerClientScript()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(282): QuizController->init()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#6 {main}
+REQUEST_URI=/quiz/php/
+---
+2013/01/17 17:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:39:27 [warning] [application] Failed to set unsafe attribute "text" of "Question".
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/QuestionController.php (84)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/17 17:39:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:43:39 [warning] [application] Failed to set unsafe attribute "text" of "Question".
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/QuestionController.php (84)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/17 17:43:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:43:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:46:45 [warning] [application] Failed to set unsafe attribute "text" of "Question".
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/QuestionController.php (84)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/17 17:46:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:46:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:48:32 [warning] [application] Failed to set unsafe attribute "text" of "Question".
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/QuestionController.php (84)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/17 17:48:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:48:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:48:57 [warning] [application] Failed to set unsafe attribute "text" of "Question".
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/QuestionController.php (84)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/17 17:48:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:49:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 17:50:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:00:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:38:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:38:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/17 18:40:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 10:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/18 10:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/18 10:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('login')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/login
+---
+2013/01/18 10:49:07 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/
+---
+2013/01/18 10:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 10:51:57 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "index".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:879
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/modules/admin/controllers/IndexController.php(63): CController->render('index')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/index')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/
+---
+2013/01/18 10:52:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 10:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:09:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/user/admi...')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/user/admin
+HTTP_REFERER=http://quiz.local/index.php/admin/user/index
+---
+2013/01/18 11:09:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/user/admi...')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/admin/user/admin
+HTTP_REFERER=http://quiz.local/index.php/admin/user/create
+---
+2013/01/18 11:10:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:12:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:12:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:19:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:19:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 11:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 13:02:36 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._id" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/components/UserIdentity.php(26): CComponent->__set('_id', '3')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(95): CModel->validate()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#14 {main}
+REQUEST_URI=/site/login
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:41:40 [error] [exception.CException] exception 'CException' with message 'EAuthUserIdentity and its behaviors do not have a method or closure named "getAttribute".' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(145): CComponent->__call('getAttribute', Array)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(145): EAuthUserIdentity->getAttribute('service_id')
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#3 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=XHdjUnCz8kZfqQiUxsvLS35EtCKCQ0yfvQLrniF84B4&oauth_verifier=wiOd3rDKNYIANxv6Y8dMA7Pfc4qENwvN5n0K3D3gGo
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:44:19 [error] [exception.CException] exception 'CException' with message 'EAuthUserIdentity and its behaviors do not have a method or closure named "getAttribute".' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(148): CComponent->__call('getAttribute', Array)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(148): EAuthUserIdentity->getAttribute('email')
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#3 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=HPrNVdu02NSrevC6vr182SPVXgAv5wlp9I17bY8FLG8&oauth_verifier=RaK9hAa8X5g2aR1hpXPXWgyrC0iXFiXHghXgR64LE
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:45:34 [error] [exception.CException] exception 'CException' with message 'EAuthUserIdentity and its behaviors do not have a method or closure named "getEmail".' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(148): CComponent->__call('getEmail', Array)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(148): EAuthUserIdentity->getEmail()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#3 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=1YkkJtM1r9gHH7VPit6ntEeLAelNLUMgFzpXIZnGwE&oauth_verifier=ntbDVLENOmOvhKZkQWUSHzjO4wg83geSwPrWxW31mo
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:46:42 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.email" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(154): CComponent->__get('email')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=sTy7nTIvXRAYO3ov7aWB9x5sRbNabLjvUK4N7Oeyqw&oauth_verifier=D7zB5MEk8bUrT5tDCojIjKhzDQVpVC7brjBrYQwEak
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:48:02 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.email" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(154): CComponent->__get('email')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=5AxjNt8peN4WwzR36L0hQDrWIBOsyfrgpubfUKNao&oauth_verifier=4z7amkgncEmRhO7nhpk04TQKcqgB4TSrZiwwBZUNwY
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:49:41 [error] [php] include(CVardumper.php): failed to open stream: No such file or directory (/Users/denisobukhov/projects/oggettoquiz/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(152): spl_autoload_call()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): SiteController->runAction()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=Lcgamu3gNZmyq0pbPXjQ6u5o4wwNiXADhTAAvlxADeA&oauth_verifier=tsoeSX1rPJIAz6IsWM3h7VQ2TDd8m9eJC8vKplZU
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php (152)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php (129)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php (80)
+2013/01/18 14:54:28 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(153): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=VtZgIiahsCbCYuXYlNyPBd2YiTWEF6FWaR38Jqlwto&oauth_verifier=cvnrSuptO8vLy8qeFI80ibcXtZN1UTA2orKGYW7npQ
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:55:24 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(153): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=nDJ21CzNzo2AxurucHJqerUuR4OyzmxihFUXj0qbHU&oauth_verifier=dYJ7GfiqvWrwjmoZoPAZK51lKqJxtBYBftn2Whbs
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:55:35 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(153): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=Mmsl5XiA6nvETP7JTTp1RXD9l9qJoqIKIjeKqN5AXk&oauth_verifier=64n2GtnywYFwWSOaH9bsLs1U8vTXrhR4go3wqtuq3uY
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:55:44 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(153): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=gq40CDS39lJcN3qANaj64jXqv6ECr3BOLnCon32Nm0&oauth_verifier=vMkZ1TjMkN5hXkkF96lKZpQWy3JJeaDmLWNiiVpDMQ
+HTTP_REFERER=http://quiz.local/index.php/site/login
+---
+2013/01/18 14:56:08 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(153): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=k9Le0IsL9BMLAT10IWcJzIIcVay6JuWvhOM2DMXg&oauth_verifier=xtaCpMVAeYZ0BWNPmRpwOCTjlVI7FJWyWX2lmNFdQ
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:56:21 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(153): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=ogpFm7GFuEk4HndN8YsDzLei89fWSTeGl1kZjgrUYk&oauth_verifier=l9uLJoKoOMk2lbEJfphm3bwKv8ccF4GtgtnWvBs
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:56:32 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(153): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=DsLMev8MHYJYgX9lX7WYzXMBH8cMVZ307U56y9UzE&oauth_verifier=87SosrnlZMArhygXH2pgoltzn3lGZajDajk5fja0
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 14:58:35 [error] [exception.CException] exception 'CException' with message 'Property "EAuthUserIdentity.attributes" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php(154): CComponent->__get('attributes')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(129): User->handleIdentity(Object(EAuthUserIdentity))
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=JUt5cPYisYnY4ZTSnNkaessNvIBxW1hZZ7odIlEiM0&oauth_verifier=h9gCbSX1RyWS3jVhrmhjZ7yeKLQpQSk6JG6Mjkkoy0
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 15:07:09 [error] [php] Missing argument 1 for CUserIdentity::__construct(), called in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php on line 164 and defined (/Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CUserIdentity.php:44)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): SiteController->runAction()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SiteController->run()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=aZbFQqWHFzfqjtRMbX1Vgs0XP3LjQy1lKhOXDLEXVQ&oauth_verifier=STq5wLJMfDZ0AOxHxOnyE7j4eAfO0KiPyYiWyIpsQ
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/models/User.php (164)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php (129)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php (80)
+2013/01/18 15:08:01 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "setForceLogin".' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(130): CComponent->__call('setForceLogin', Array)
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(130): UserIdentity->setForceLogin(true)
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=SoFwKN5Gq16CUki8yiz6CQw1SeOTwXiUqgMwKxByzM&oauth_verifier=q9S3pVeEAyvDaXgmotLQ9R2jd4yOsaiVLis1SM8V9g
+HTTP_REFERER=http://quiz.local/site/login
+---
+2013/01/18 15:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 15:22:44 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CWebUser.php(141): CComponent->__get('username')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/site/index.php(22): CWebUser->__get('username')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/denisobu...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisobu...', NULL, true)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisobu...', NULL, true)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(32): CController->render('index')
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php
+HTTP_REFERER=http://quiz.local/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=Fq0zZfSo0waN8Mqulvkstez8Nzdj2CHNw6Y6RY&oauth_verifier=UBGRegfwAxksimRo6fFrSDwCZbE4Y7R0mBlTN6AohOs
+---
+2013/01/18 15:23:01 [error] [php] Missing argument 1 for CWebUser::getState(), called in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/site/index.php on line 22 and defined (/Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CWebUser.php:557)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SiteController->renderFile()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SiteController->renderPartial()
+#3 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): SiteController->runAction()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SiteController->run()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/site/index.php (22)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php (32)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/18 15:23:38 [error] [php] Undefined variable: _SESSION (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/site/index.php:22)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): SiteController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): SiteController->runAction()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/site/index.php (22)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php (32)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/18 15:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 15:28:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 15:28:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/lib/boot...')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://quiz.local/assets/94eb9a27/css/yii.css
+---
+2013/01/18 16:08:23 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.user_id" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CWebUser.php(141): CComponent->__get('user_id')
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/site/index.php(22): CWebUser->__get('user_id')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/denisobu...')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisobu...', NULL, true)
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisobu...', NULL, true)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(32): CController->render('index')
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#12 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#13 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php
+HTTP_REFERER=http://quiz.local/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=76VlW3jfEic5jlTFBe1TKvDI8eVKIG6INduiwS54E2s&oauth_verifier=Q6ut8eOEop4fTRl9aOElL7x9ZAXHqZ9XEcCBzIE
+---
+2013/01/18 16:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(271): CController->missingAction('index.php')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('index.php')
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/index.php')
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+---
+2013/01/18 18:11:25 [error] [php] Undefined property: UserIdentity::$id (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/components/UserIdentity.php:67)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CWebUser.php(224): UserIdentity->getId()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(132): CWebUser->login()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): SiteController->runAction()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=ezTD1IAHO4m2mJPgQtgTuAUAzrHmcpP9jJk3NycAw10&oauth_verifier=CS8SYfszzTGoXTfxLYu5B9EVQtIW1dSlCjVmEvw8s
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/components/UserIdentity.php (67)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/components/UserIdentity.php (67)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php (132)
+2013/01/18 18:12:22 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.user_id" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/components/UserIdentity.php(67): CComponent->__get('user_id')
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/auth/CWebUser.php(224): UserIdentity->getId()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(132): CWebUser->login(Object(UserIdentity))
+#3 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/SiteController.php(80): SiteController->socialLogin()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=yyhIoJDnAohwsEwENA6J0ua8JUsPZbSGp05G8jfi28&oauth_verifier=mlZbP4kU7VvMOh5MaDM4EpiETMQSxD2tZbBRWZiI
+HTTP_REFERER=http://quiz.local/site/login
+---

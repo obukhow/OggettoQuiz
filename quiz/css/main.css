@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	background: #EFEFEF url('../images/gray_jean.png');
 }
 .curtain {
 	display: none;
@@ -29,8 +29,6 @@ body {
 {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
 }
 
 #header
@@ -38,6 +36,10 @@ body {
 	margin: 0;
 	padding: 0;
 	border-top: 3px solid #C9E0ED;
+}
+
+.logo {
+	height: 100px;
 }
 
 #content
@@ -95,6 +97,12 @@ body {
 	color: #6399cd;
 	background-color:#EFF4FA;
 	text-decoration:none;
+}
+h1 {
+	text-shadow: 1px 1px 0 #fff;
+	font-family: 'Lobster', cursive !important;
+	font-weight: normal !important;
+	margin-bottom: 0.6em !important;
 }
 
 div.flash-error, div.flash-notice, div.flash-success

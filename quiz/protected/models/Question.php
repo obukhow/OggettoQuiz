@@ -7,6 +7,7 @@
  * @property integer $question_id
  * @property integer $section_id
  * @property string $title
+ * @property string $text
  * @property string $theme
  * @property string $type
  *
@@ -49,12 +50,12 @@ class Question extends CActiveRecord
         return array(
             array('section_id, title', 'required'),
             array('section_id', 'numerical', 'integerOnly'=>true),
-            array('title', 'length', 'max'=>255),
             array('theme', 'length', 'max'=>500),
+            array('title', 'length', 'max'=>255),
             array('type', 'length', 'max'=>1),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('question_id, section_id, title, theme, type', 'safe', 'on'=>'search'),
+            array('question_id, section_id, title, theme, type, text', 'safe'),
         );
     }
 
@@ -80,6 +81,7 @@ class Question extends CActiveRecord
             'question_id' => 'Question',
             'section_id' => 'Section',
             'title' => 'Title',
+            'text' => 'Text',
             'theme' => 'Theme',
             'type' => 'Type',
         );

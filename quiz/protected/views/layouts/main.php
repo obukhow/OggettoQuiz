@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -37,22 +38,27 @@
 			),
 		)); ?>
 	</div>
+
 	<div class="container" id="page">
+		<img src="<?php echo Yii::app()->request->baseUrl ?>/images/clear_logo.png" class="logo"/>
+
 		<!-- mainmenu -->
 		<?php if(isset($this->breadcrumbs)):?>
 			<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 				'links'=>$this->breadcrumbs,
 			)); ?><!-- breadcrumbs -->
 		<?php endif?>
+
 			
 		<?php echo $content; ?>
 
 		<div class="clear"></div>
+
 		<div id="footer">
-			Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+			&copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
 			All Rights Reserved.<br/>
-			<?php echo Yii::powered(); ?>
 		</div><!-- footer -->
+
 	</div><!-- page -->
 	<div class="curtain" id="curtain"></div>
 </body>

@@ -21,7 +21,8 @@ $section = new Section();
 
 	<fieldset>
 			<?php echo $form->dropDownListRow($model,'section_id', CHtml::listData($section->findAll(), 'section_id', 'title')); ?>
-			<?php echo $form->textAreaRow($model,'title', array('class'=>'span6', 'rows'=>5)); ?>
+            <?php echo $form->textFieldRow($model,'title', array('class'=>'span6')); ?>
+			<?php echo $form->textAreaRow($model,'text', array('class'=>'span6', 'rows'=>5)); ?>
 			<?php echo $form->radioButtonListRow($model, 'type', $model->getTypeOptions()); ?>
 			<?php echo $form->textFieldRow($model,'theme',array('size'=>60,'maxlength'=>500)); ?>
 

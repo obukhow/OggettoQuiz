@@ -50,6 +50,10 @@ class QuizController extends Controller
         
         $this->render('index', array('section' => $section, 'question' => $question, 'number' => $id));
     }
+    public function actionAjaxquestion($section, $id)
+    {
+        return $this->actionQuestion($section, $id);
+    }
 
     /**
      * index action

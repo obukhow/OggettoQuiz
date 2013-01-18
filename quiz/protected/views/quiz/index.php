@@ -43,6 +43,9 @@
     ));
 ?>
 </div>
+<div id="counter" style="display:none;">
+    Question <span id="counter-current"><?php echo $number ?></span> of <span id="counter-total"><?php echo $section->getQuestionsCount() ?></span>
+</div>
 <script type="text/javascript">
     window.onload = function(){
         quiz = new OggettoQuiz(<?php echo $section->getQuestionsCount() ?>, <?php echo $number ?>, '<?php echo $section->getUrl() ?>');

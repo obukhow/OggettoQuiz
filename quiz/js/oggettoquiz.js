@@ -3,7 +3,7 @@
  * History management javascript
  * 
  */
-window.onload = function(){
+$(window).load(function () {
     // Prepare
     var History = window.History; // Note: We are using a capital H instead of a lower h
     if ( !History.enabled ) {
@@ -14,9 +14,16 @@ window.onload = function(){
     // Bind to StateChange Event
     History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
         var State = History.getState(); // Note: We are using History.getState() instead of event.state
-        History.log(State.data, State.title, State.url);
+        var key = 'question/' + State.data.state;
+
+        // History.log(State.data, State.title, State.url);
+
+        if(quiz.getCache(key)) {
+            quiz.updateContentHistory(key, quiz.getCache(key));
+        }
     });
-}
+
+});
 
 function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
 {
@@ -30,10 +37,12 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     this.finishBtn = $('#finishBtn');
     this.content   = $('#page-content');
     this.curtain   = $('#curtain');
+    this.counter   = $('#counter');
     this.question  = '#question';
     this.cache     = new Array();
     this.contentCached = this.contentCurrent = true;
     this.currentUrl;
+    this.manualUpdate = false;
 
     this.start = function() {
         this.currentQuestion++;
@@ -68,7 +77,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
 
     this._afterStep = function() {
         url = "question/" + this.currentQuestion;
-        this.updateContent(url);
+        this.updateContent(url, false);
         this.renderButtons();
     }
 
@@ -93,9 +102,10 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
             this.saveCache(url, cache);
         }
         this.contentCurrent = this.content.serialize();
+
         if(this.contentCached !== this.contentCurrent) {
             $.post(
-                baseUrl + '/' + url,
+                baseUrl + '/postQuestion',
                 this.content.serialize(),
                 function(response) {
                 }
@@ -105,8 +115,10 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
 
     this.renderButtons = function() {
         this.buttons.hide();
+        this.renderCounter();
 
         if(!this.currentQuestion) {
+            this.counter.hide();
             this.startBtn.show();
             return;
         }
@@ -125,19 +137,20 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         }
     }
 
-    this.updateContent = function(url) {
+    this.updateContent = function(url, isHistory) {
         var content;
         var self = this;
+        
         if (this.getCache(url)) {
-            this._update(url, this.getCache(url));
+            this._update(url, this.getCache(url), isHistory);
             this.contentCached = this.content.serialize();
             this.showCurtain(false);
         } else {
             $.get(
-                baseUrl + '/' + url,
+                baseUrl + '/ajax' + url + '?t=' + new Date().getTime(),
                 function(response) {
                     self.saveCache(url, response);
-                    self._update(url, response);
+                    self._update(url, response, isHistory);
                     this.contentCached = this.content.serialize();
                     this.showCurtain(false);
                 }.bind(this)
@@ -146,9 +159,27 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         this.currentUrl = url;
     }
 
-    this._update = function(url, data) {
+    this.updateContentHistory = function(url, data) {
+        if (this.manualUpdate) {
+            return;
+        }
+        this.saveQuestion(url);
+        
+        this.currentQuestion = History.getState().data.state;
+        this.currentUrl = url;
+        this.renderButtons();
+
         this.content.html(data.html);
-        this.changeState(data.title, url);
+        this.contentCached = this.content.serialize();
+    }
+
+    this._update = function(url, data, isHistory) {
+        this.content.html(data.html);
+        if(!isHistory) {
+            this.manualUpdate = true;
+            this.replaceState(data.title, url);
+            this.manualUpdate = false;
+        }
     }
 
     this.saveCache = function (key, value) {
@@ -166,8 +197,16 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         History.pushState({state: this.currentQuestion}, title, baseUrl + '/' + url);
     }
 
+    this.replaceState = function(title, url) {
+        History.replaceState({state: this.currentQuestion}, title, baseUrl + '/' + url);
+    }
+
     this.showCurtain = function(isShow){
         (isShow) ? this.curtain.addClass('visible') : this.curtain.removeClass('visible');
+    }
+
+    this.renderCounter = function(){
+        this.counter.show().find('#counter-current').html(this.currentQuestion);
     }
 
     this._init = function() {

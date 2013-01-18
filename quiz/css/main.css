@@ -1,12 +1,30 @@
-body
-{
+html, body {
+	height: 100%;
+}
+body {
 	margin: 0;
 	padding: 0;
+	position: relative;
+	z-index: 0;
+	width: 100%;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
 }
-
+.curtain {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	opacity: 0.5;
+}
+.curtain.visible {
+	display: block;
+}
 #page
 {
 	margin-top: 5px;

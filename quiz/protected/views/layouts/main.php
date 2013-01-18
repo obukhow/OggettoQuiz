@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
 	<div id="mainmenu">
 		<?php $this->widget('bootstrap.widgets.TbNavbar',array(
 			'brand'=>'Quiz Manager',
@@ -38,28 +37,23 @@
 			),
 		)); ?>
 	</div>
-<div class="container" id="page">
+	<div class="container" id="page">
+		<!-- mainmenu -->
+		<?php if(isset($this->breadcrumbs)):?>
+			<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
+				'links'=>$this->breadcrumbs,
+			)); ?><!-- breadcrumbs -->
+		<?php endif?>
+			
+		<?php echo $content; ?>
 
-
-	<!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
-		
-	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
-
-</div><!-- page -->
-
+		<div class="clear"></div>
+		<div id="footer">
+			Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+			All Rights Reserved.<br/>
+			<?php echo Yii::powered(); ?>
+		</div><!-- footer -->
+	</div><!-- page -->
+	<div class="curtain" id="curtain"></div>
 </body>
 </html>

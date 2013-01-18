@@ -3,7 +3,7 @@
  * History management javascript
  * 
  */
-
+window.onload = function(){
     // Prepare
     var History = window.History; // Note: We are using a capital H instead of a lower h
     if ( !History.enabled ) {
@@ -16,24 +16,32 @@
         var State = History.getState(); // Note: We are using History.getState() instead of event.state
         History.log(State.data, State.title, State.url);
     });
+}
 
 function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
 {
     this.count     = questionsCount;
-    this.baseUrl   = baseUrl; 
+    this.baseUrl   = baseUrl;
     this.currentQuestion = (currentQuestion) ? currentQuestion : 0;
+    this.buttons   = $('.btn');
     this.startBtn  = $('#startBtn');
     this.prevBtn   = $('#prevBtn');
     this.nextBtn   = $('#nextBtn');
     this.finishBtn = $('#finishBtn');
     this.content   = $('#page-content');
+    this.curtain   = $('#curtain');
     this.question  = '#question';
-    this.cache     = new Array;
+    this.cache     = new Array();
+    this.contentCached = this.contentCurrent = true;
     this.currentUrl;
 
     this.start = function() {
         this.currentQuestion++;
         this._afterStep();
+    }
+
+    this.finish = function(){
+        alert('You finished!');
     }
 
     this.next = function() {
@@ -49,18 +57,19 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     }
 
     this._beforeStep = function() {
+        this.showCurtain(true);
         if (this.getCache(this.currentUrl)) {
             var cache = this.getCache(this.currentUrl);
             cache.html = this.cloneContent();
             this.saveCache(this.currentUrl, cache);
         }
-        this.saveQuestion();
+        this.saveQuestion(this.currentUrl);
     }
 
     this._afterStep = function() {
-        this.renderButtons();
         url = "question/" + this.currentQuestion;
         this.updateContent(url);
+        this.renderButtons();
     }
 
     this.cloneContent = function(){
@@ -76,9 +85,15 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         return cloned;
     }
 
-    this.saveQuestion = function() {
-        contentCurrent = this.content.serialize();
-        if(contentCached !== contentCurrent) {
+    this.saveQuestion = function(url) {
+        if(!url) {
+            url = 'question/' + this.currentQuestion;
+            var cache = {};
+            cache.html = this.cloneContent();
+            this.saveCache(url, cache);
+        }
+        this.contentCurrent = this.content.serialize();
+        if(this.contentCached !== this.contentCurrent) {
             $.post(
                 baseUrl + '/' + url,
                 this.content.serialize(),
@@ -89,21 +104,24 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     }
 
     this.renderButtons = function() {
-        if (this.currentQuestion == this.count) {
-            this.finishBtn.show();
-            this.nextBtn.hide();
-            this.prevBtn.show();
-        } else if (this.currentQuestion < this.count) {
-            this.finishBtn.hide();
-            this.nextBtn.show();
-            this.prevBtn.show();
-        } 
-        if (!this.currentQuestion) {
+        this.buttons.hide();
+
+        if(!this.currentQuestion) {
             this.startBtn.show();
-            this.prevBtn.hide();
-            this.nextBtn.hide();
-        } else {
-            this.startBtn.hide();
+            return;
+        }
+
+        if(this.currentQuestion == this.count) {
+            this.prevBtn.show();
+            this.finishBtn.show();
+            return;
+        }
+
+        if(this.currentQuestion > 0) {
+            this.nextBtn.show();
+        }
+        if (this.currentQuestion > 1) {
+            this.prevBtn.show();
         }
     }
 
@@ -112,14 +130,16 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         var self = this;
         if (this.getCache(url)) {
             this._update(url, this.getCache(url));
-            contentCached = this.content.serialize();
+            this.contentCached = this.content.serialize();
+            this.showCurtain(false);
         } else {
             $.get(
                 baseUrl + '/' + url,
                 function(response) {
                     self.saveCache(url, response);
                     self._update(url, response);
-                    contentCached = this.content.serialize();
+                    this.contentCached = this.content.serialize();
+                    this.showCurtain(false);
                 }.bind(this)
             );
         }
@@ -144,6 +164,10 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
 
     this.changeState = function(title, url) {
         History.pushState({state: this.currentQuestion}, title, baseUrl + '/' + url);
+    }
+
+    this.showCurtain = function(isShow){
+        (isShow) ? this.curtain.addClass('visible') : this.curtain.removeClass('visible');
     }
 
     this._init = function() {

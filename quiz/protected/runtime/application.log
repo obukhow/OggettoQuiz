@@ -8323,3 +8323,57 @@ Stack trace:
 REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=yyhIoJDnAohwsEwENA6J0ua8JUsPZbSGp05G8jfi28&oauth_verifier=mlZbP4kU7VvMOh5MaDM4EpiETMQSxD2tZbBRWZiI
 HTTP_REFERER=http://quiz.local/site/login
 ---
+2013/01/20 20:47:18 [error] [exception.CException] exception 'CException' with message 'The asset "/Users/roomine/Sites/oggettoquiz/quiz/protected/extensions/eauth/assets" to be published does not exist.' in /Users/roomine/Sites/oggettoquiz/framework/web/CAssetManager.php:255
+Stack trace:
+#0 /Users/roomine/Sites/oggettoquiz/quiz/protected/extensions/eauth/EAuthWidget.php(104): CAssetManager->publish('/Users/roomine/...', false, -1, true)
+#1 /Users/roomine/Sites/oggettoquiz/quiz/protected/extensions/eauth/EAuthWidget.php(88): EAuthWidget->registerAssets()
+#2 /Users/roomine/Sites/oggettoquiz/framework/web/CBaseController.php(174): EAuthWidget->run()
+#3 /Users/roomine/Sites/oggettoquiz/quiz/protected/views/site/login.php(55): CBaseController->widget('ext.eauth.EAuth...', Array)
+#4 /Users/roomine/Sites/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/roomine/...')
+#5 /Users/roomine/Sites/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/roomine/...', Array, true)
+#6 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/roomine/...', Array, true)
+#7 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#8 /Users/roomine/Sites/oggettoquiz/quiz/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#9 /Users/roomine/Sites/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#10 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/roomine/Sites/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#14 /Users/roomine/Sites/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#15 /Users/roomine/Sites/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/roomine/Sites/oggettoquiz/quiz/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/site/login
+---
+2013/01/20 20:48:15 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/Users/roomine/Sites/oggettoquiz/quiz/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /Users/roomine/Sites/oggettoquiz/framework/web/CAssetManager.php:128
+Stack trace:
+#0 /Users/roomine/Sites/oggettoquiz/framework/web/CAssetManager.php(113): CAssetManager->setBasePath('/Users/roomine/...')
+#1 /Users/roomine/Sites/oggettoquiz/framework/web/CAssetManager.php(235): CAssetManager->getBasePath()
+#2 /Users/roomine/Sites/oggettoquiz/quiz/protected/extensions/eauth/EAuthWidget.php(104): CAssetManager->publish('/Users/roomine/...', false, -1, true)
+#3 /Users/roomine/Sites/oggettoquiz/quiz/protected/extensions/eauth/EAuthWidget.php(88): EAuthWidget->registerAssets()
+#4 /Users/roomine/Sites/oggettoquiz/framework/web/CBaseController.php(174): EAuthWidget->run()
+#5 /Users/roomine/Sites/oggettoquiz/quiz/protected/views/site/login.php(55): CBaseController->widget('ext.eauth.EAuth...', Array)
+#6 /Users/roomine/Sites/oggettoquiz/framework/web/CBaseController.php(127): require('/Users/roomine/...')
+#7 /Users/roomine/Sites/oggettoquiz/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/roomine/...', Array, true)
+#8 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(870): CBaseController->renderFile('/Users/roomine/...', Array, true)
+#9 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#10 /Users/roomine/Sites/oggettoquiz/quiz/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#11 /Users/roomine/Sites/oggettoquiz/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#12 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /Users/roomine/Sites/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/roomine/Sites/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('login')
+#16 /Users/roomine/Sites/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 /Users/roomine/Sites/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/roomine/Sites/oggettoquiz/quiz/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/site/login
+---
+2013/01/20 20:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/afcdb1b4/css/auth.css".' in /Users/roomine/Sites/oggettoquiz/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/roomine/Sites/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/afcdb1b4...')
+#1 /Users/roomine/Sites/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/roomine/Sites/oggettoquiz/quiz/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/assets/afcdb1b4/css/auth.css
+---

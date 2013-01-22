@@ -13,11 +13,11 @@
 
 	<?php echo $form->textFieldRow($model,'photo_url',array('class'=>'span5','maxlength'=>255)); ?>
 
-	<?php echo $form->textFieldRow($model,'role',array('class'=>'span5')); ?>
+	<?php echo $form->dropDownList($model,'role', User::getRoles(), array('class'=>'span5')); ?>
 
 	<?php echo $form->passwordFieldRow($model,'password',array('class'=>'span5','maxlength'=>255)); ?>
 
-	<?php echo $form->textFieldRow($model,'is_oggetto',array('class'=>'span5')); ?>
+	<?php echo $form->checkBoxListInlineRow($model,'is_oggetto',array(1 => 1)); ?>
 
 	<?php echo $form->textFieldRow($model,'facebook_id',array('class'=>'span5','maxlength'=>255)); ?>
 

@@ -121,7 +121,7 @@ class QuizController extends Controller
      */
     protected function _initSection($sectionName)
     {
-        $section = Section::model()->findByAttributes(array('title' => $sectionName));
+        $section = Section::model()->findByAttributes(array('url' => $sectionName));
         if ($section == null) {
             throw new CHttpException(404,'The requested page does not exist.');
         }

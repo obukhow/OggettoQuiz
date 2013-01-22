@@ -3,7 +3,7 @@
  * GitHubOAuthService class file.
  *
  * Register application: https://github.com/settings/applications
- * 
+ *
  * @author Alexander Shkarpetin <ashkarpetin@gmail.com>
  * @link https://github.com/Nodge/yii-eauth/
  * @license http://www.opensource.org/licenses/bsd-license.php
@@ -21,7 +21,7 @@ class GitHubOAuthService extends EOAuth2Service {
 	protected $title = 'GitHub';
 	protected $type = 'OAuth';
 	protected $jsArguments = array('popup' => array('width' => 900, 'height' => 450));
-	
+
 	protected $client_id = '';
 	protected $client_secret = '';
 	protected $scope = '';
@@ -32,29 +32,29 @@ class GitHubOAuthService extends EOAuth2Service {
 
     protected function fetchAttributes() {
         $info = (object) $this->makeSignedRequest('https://api.github.com/user');
-    
-        $this->attributes['id'] = $info->id;
+
+        $this->attributes['id'] = $info->login;
         $this->attributes['name'] = $info->login;
         $this->attributes['url'] = $info->html_url;
         $this->attributes['service_id'] = 'github_id';
     }
-    
+
     protected function getTokenUrl($code) {
         return $this->providerOptions['access_token'];
     }
-    
+
     protected function getAccessToken($code) {
         $params = array(
             'client_id' => $this->client_id,
             'client_secret' => $this->client_secret,
             'code' => $code,
         );
-        
+
         $response = $this->makeRequest($this->getTokenUrl($code), array('data' => $params), false);
         parse_str($response, $result);
         return $result['access_token'];
     }
-    
+
     /**
     * Authenticate the user.
     * @return boolean whether user was successfuly authenticated.
@@ -62,10 +62,10 @@ class GitHubOAuthService extends EOAuth2Service {
     public function authenticate() {
         if (isset($_GET['error']) && $_GET['error'] == 'user_denied')
             $this->cancel();
-            
+
         return parent::authenticate();
     }
-    
+
     /**
      * Returns the error info from json.
      * @param stdClass $json the json response.

@@ -43,7 +43,7 @@ body {
 
 #content
 {
-    padding: 20px;
+    padding: 20px 0 ;
 }
 
 #sidebar
@@ -103,7 +103,10 @@ h1 {
 	font-weight: normal !important;
 	margin-bottom: 0.6em !important;
 }
-
+.login-form {
+	background: url('../images/loginbg.jpg') no-repeat;
+	border-radius: 5px;
+}
 div.flash-error, div.flash-notice, div.flash-success
 {
 	padding:.8em;

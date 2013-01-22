@@ -21,6 +21,8 @@
  */
 class User extends CActiveRecord
 {
+    const ADMIN_ROLE = 'admin';
+    const GUEST_ROLE = 'guest';
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.

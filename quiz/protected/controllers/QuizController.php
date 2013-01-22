@@ -2,6 +2,34 @@
 
 class QuizController extends Controller
 {
+     /**
+     * @return array action filters
+     */
+    public function filters()
+    {
+        return array(
+            'accessControl', // perform access control for CRUD operations
+        );
+    }
+
+     /**
+     * Specifies the access control rules.
+     * This method is used by the 'accessControl' filter.
+     * @return array access control rules
+     */
+    public function accessRules()
+    {
+        return array(
+            array('allow', // allow authenticated user to perform 'create' and 'update' actions
+                'actions'=>array('index', 'PostQuestion', 'Result', 'Ajaxquestion', 'question'),
+                'users'=>array('@'),
+            ),
+            array('deny',  // deny all users
+                'users'=>array('*'),
+            ),
+        );
+    }
+
     /**
      * Include js files
      *
@@ -62,7 +90,7 @@ class QuizController extends Controller
             echo CJSON::encode($result);
             Yii::app()->end();
         }
-        
+
         $this->render('index', array('section' => $section, 'question' => $question, 'number' => $id));
     }
     public function actionAjaxquestion($section, $id)

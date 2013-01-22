@@ -8323,3 +8323,72 @@ Stack trace:
 REQUEST_URI=/index.php/site/login?service=twitter&redirect_uri=http%3A%2F%2Fquiz.local%2Findex.php%2Fsite%2Flogin%3Fservice%3Dtwitter&js&oauth_token=yyhIoJDnAohwsEwENA6J0ua8JUsPZbSGp05G8jfi28&oauth_verifier=mlZbP4kU7VvMOh5MaDM4EpiETMQSxD2tZbBRWZiI
 HTTP_REFERER=http://quiz.local/site/login
 ---
+2013/01/18 18:22:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php:337
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('')
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz')
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/quiz/
+---
+2013/01/18 18:40:32 [error] [php] Undefined variable: section (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php:19)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(870): QuizController->renderFile()
+#1 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(45): QuizController->renderPartial()
+#2 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(57): QuizController->actionQuestion()
+#3 unknown(0): QuizController->actionAjaxquestion()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#8 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#9 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#10 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/ajaxquestion/6?t=1358520032365
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/views/quiz/question.php (19)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (45)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (57)
+2013/01/18 18:45:33 [error] [exception.CException] exception 'CException' with message 'Property "CHttpSession.question" is not defined.' in /Users/denisobukhov/projects/oggettoquiz/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php(27): CComponent->__set('question', Array)
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/actions/CInlineAction.php(50): QuizController->actionPostQuestion()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): CController->run('postQuestion')
+#6 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController('quiz/postQuesti...')
+#7 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/quiz/php/postQuestion
+HTTP_REFERER=http://quiz.local/quiz/php/question/1
+---
+2013/01/18 18:49:57 [error] [php] Undefined variable: section (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php:30)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/postQuestion
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (30)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)
+2013/01/18 19:08:08 [error] [php] array_pop() expects exactly 1 parameter, 2 given (/Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php:31)
+Stack trace:
+#0 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(287): QuizController->runAction()
+#2 /Users/denisobukhov/projects/oggettoquiz/framework/web/CController.php(266): QuizController->runActionWithFilters()
+#3 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(283): QuizController->run()
+#4 /Users/denisobukhov/projects/oggettoquiz/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /Users/denisobukhov/projects/oggettoquiz/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisobukhov/projects/oggettoquiz/quiz/index.php(15): CWebApplication->run()
+REQUEST_URI=/quiz/php/postQuestion
+in /Users/denisobukhov/projects/oggettoquiz/quiz/protected/controllers/QuizController.php (31)
+in /Users/denisobukhov/projects/oggettoquiz/quiz/index.php (15)

@@ -18,7 +18,22 @@ class QuizController extends Controller
     }
     public function actionPostQuestion()
     {
-        $this->render('postQuestion');
+        $question = Yii::app()->getRequest()->getPost('question');
+        $session = Yii::app()->session;
+        var_dump($question);
+        if (!$question && !is_array($question)) {
+            return;
+        }
+        foreach ($question as $sectionId => $_answer) {
+            $question = $session->get('question', array());
+            if (!isset($question[$sectionId])) {
+                $question[$sectionId] = array();
+            }
+            $question = array_merge_recursive($question, $_answer);
+            $session->add('question', $question);
+        }
+
+        var_dump($session->get('question'));
     }
 
     public function actionResult()

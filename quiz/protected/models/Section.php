@@ -37,7 +37,7 @@ class Section extends CActiveRecord
 	 */
 	public function getUrl()
 	{
-		return Yii::app()->getRequest()->getBaseUrl() . '/quiz/' . strtolower($this->title);
+		return Yii::app()->getRequest()->getBaseUrl() . '/quiz/' . strtolower($this->url);
 	}
 
 	/**
@@ -60,13 +60,41 @@ class Section extends CActiveRecord
 		return array(
 			array('title', 'required'),
 			array('title', 'length', 'max'=>255),
+                        array('description, url', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('section_id, title', 'safe', 'on'=>'search'),
 		);
 	}
 
-	/**
+        /**
+         * Before save
+         *
+         * @return bool
+         */
+        public function beforeSave()
+        {
+            $this->url = ($this->url)?$this->sanitize($this->url):$this->sanitize($this->title);
+
+            return parent::beforeSave();
+        }
+
+        /**
+         * Sanitize url
+         *
+         * @param str $string url
+         * @return str
+         */
+        protected function sanitize($string)
+        {
+            $match = array("/\s+/","/[^\p{L}a-zA-Z0-9\-]/u","/-+/","/^-+/","/-+$/");
+            $replace = array("-","","-","","");
+            $string = preg_replace($match,$replace, $string);
+            $string = mb_strtolower($string);
+            return $string;
+        }
+
+        /**
 	 * @return array relational rules.
 	 */
 	public function relations()

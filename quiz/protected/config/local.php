@@ -11,7 +11,7 @@ return array(
             'connectionString' => 'mysql:host=localhost;dbname=quiz',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => 'root',
+            'password' => '1111',
             'charset' => 'utf8',
         ),
     )

@@ -27,7 +27,7 @@ return array(
     'modules'=>array(
         'admin',
         // uncomment the following to enable the Gii tool
-        
+
         'gii'=>array(
             'class'=>'system.gii.GiiModule',
             'password'=>'123123',
@@ -37,17 +37,18 @@ return array(
                 'bootstrap.gii',
             ),
         ),
-        
+
     ),
 
     // application components
     'components'=>array(
         'user'=>array(
-            // enable cookie-based authentication
+            'class' => 'WebUser',
+            'loginUrl' => array('site/login'),
             'allowAutoLogin'=>true,
         ),
         // uncomment the following to enable URLs in path-format
-        
+
         'urlManager'=>array(
             'urlFormat'=>'path',
             'rules'=>array(
@@ -60,7 +61,7 @@ return array(
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
             ),
         ),
-        
+
         // 'db'=>array(
         //  'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
         // ),
@@ -100,7 +101,7 @@ return array(
         'loid' => array(
             'class' => 'ext.lightopenid.loid',
         ),
-        
+
         'eauth' => array(
             'class' => 'ext.eauth.EAuth',
             'popup' => true, // Use the popup window instead of redirecting.

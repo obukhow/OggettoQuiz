@@ -21,6 +21,8 @@
  */
 class User extends CActiveRecord
 {
+    const ADMIN_ROLE = 'admin';
+    const GUEST_ROLE = 'guest';
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -164,4 +166,38 @@ class User extends CActiveRecord
 		$identity = new UserIdentity($user->email, $user->password);
 		return $identity;
 	}
+
+        public function getYandexUrl()
+        {
+            $url = 'http://api.moikrug.ru/v1/person?ids=' . $this->yandex_id;
+
+            $json = file_get_contents($url);
+            $yandex = json_decode($json);
+            return $yandex->link;
+        }
+
+        /**
+         * Get roles
+         *
+         * @return array
+         */
+        public static function getRoles()
+        {
+            return array(
+                self::GUEST_ROLE,
+                self::ADMIN_ROLE,
+            );
+        }
+
+        /**
+         * Get role
+         *
+         * @param int $role id
+         * @return str
+         */
+        public static function getRole($role)
+        {
+            $array = self::getRoles();
+            return isset($array[$role])?$array[$role]:'';
+        }
 }

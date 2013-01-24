@@ -30,7 +30,7 @@ class UserIdentity extends CUserIdentity
             $this->setState(' ', $record->name);
             $this->setState('email', $record->email);
             $this->setState('photo_url', $record->photo_url);
-            $this->setState('role', $record->role);
+            $this->setState('roles', ($record->role)?User::ADMIN_ROLE:User::GUEST_ROLE);
             $this->setState('is_oggetto', $record->is_oggetto);
             $this->setState('facebook_id', $record->facebook_id);
             $this->setState('github_id', $record->github_id);

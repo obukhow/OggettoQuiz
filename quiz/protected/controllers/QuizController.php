@@ -21,7 +21,7 @@ class QuizController extends Controller
     {
         return array(
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('index', 'PostQuestion', 'Result', 'Ajaxquestion', 'question'),
+                'actions'=>array('index', 'PostQuestion', 'Result', 'Ajaxquestion', 'question', 'success'),
                 'users'=>array('@'),
             ),
             array('deny',  // deny all users

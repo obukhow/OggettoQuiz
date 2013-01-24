@@ -105,7 +105,7 @@ attributeOption = {
     }
     
 
-}
+};
 $(document).ready(function() {
 	$('#addButton').click(function() {
 		attributeOption.add();

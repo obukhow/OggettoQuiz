@@ -11,6 +11,7 @@
         echo $section->description;
     }
     ?>
+    <?php echo $section->getUrl() ?>
 </form>
 <div class="btn-toolbar">
 <?php

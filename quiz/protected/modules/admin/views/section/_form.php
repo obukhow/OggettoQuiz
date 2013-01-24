@@ -20,3 +20,14 @@
 	</div>
 
 <?php $this->endWidget(); ?>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $('#Section_title').change(function() {
+        $.get('<?php echo Yii::app()->createUrl('admin/section/sanitizetitle') ?>', {title: $('#Section_title').val()},
+            function(data) {
+                $('#Section_url').val(data.title);
+            })
+    });
+});
+</script>

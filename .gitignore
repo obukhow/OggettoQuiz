@@ -1,3 +1,4 @@
-protected/runtime/
+quiz/protected/runtime/
+quiz/assets
 themes/classic/views/
 .DS_STORE

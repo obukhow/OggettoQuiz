@@ -50,7 +50,10 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     }
 
     this.finish = function(){
-        alert('You finished!');
+        if (confirm('Are you shure you want to finish?')) {
+            this._beforeStep();
+            document.location.href = this.baseUrl + '/success';
+        }
     }
 
     this.next = function() {

@@ -41,6 +41,66 @@ class Question extends CActiveRecord
     }
 
     /**
+     * Has right answer flag
+     *
+     * @return boolean
+     */
+    public function hasRightAnswer()
+    {
+        return in_array($this->type, array(self::TYPE_ONECHOICE, self::TYPE_MULTICHOICE));
+    }
+
+    /**
+     * Validate question result flag
+     *
+     * @param mixed $result result
+     *
+     * @return boolean
+     */
+    public function isValidResult($result)
+    {
+        $result = (array) $result;
+        return $this->_compareArrays($result, $this->getRightAnswers());
+    }
+
+   /**
+    * Compare arrays
+    *
+    * @param Array $array1 array to compare
+    * @param Array $array2 array to compare
+    *
+    * @return bool
+    */
+    protected function _compareArrays(Array $array1, Array $array2)
+    {
+        sort($array1);
+        sort($array2);
+        return ($array1 == $array2);
+    }
+
+    /**
+     * Get question right answers
+     *
+     * @return array
+     */
+    public function getRightAnswers()
+    {
+        $criteria = new CDbCriteria;
+        $criteria->select = 't.answer_id';
+        $criteria->condition = 't.is_correct = :is_correct AND t.question_id = :question_id';
+        $criteria->params = array(
+            ':is_correct'  => QuestionsAnswer::IS_CORRECT, 
+            ':question_id' => $this->question_id,
+            );
+        $answers = array();
+        $result =  QuestionsAnswer::model()->findAll($criteria);
+        foreach ($result as $item) {
+            $answers[] = $item->answer_id;
+        }
+        return $answers;
+    }
+
+    /**
      * @return array validation rules for model attributes.
      */
     public function rules()

@@ -16,11 +16,16 @@ class QuizController extends Controller
         $markdown->registerClientScript();
 
     }
+
+    /**
+     * Post question
+     *
+     * @return void
+     */
     public function actionPostQuestion()
     {
         $question = Yii::app()->getRequest()->getPost('question');
         $session = Yii::app()->session;
-        var_dump($question);
         if (!$question && !is_array($question)) {
             return;
         }
@@ -29,16 +34,55 @@ class QuizController extends Controller
             if (!isset($question[$sectionId])) {
                 $question[$sectionId] = array();
             }
-            $question = array_merge_recursive($question, $_answer);
+            foreach ($_answer as $__questionId => $__answers) {
+                $question[$sectionId][$__questionId] = $__answers;
+            }
             $session->add('question', $question);
         }
 
-        var_dump($session->get('question'));
     }
 
-    public function actionResult()
+    /**
+     * Process result action
+     *
+     * @return void
+     */
+    public function actionSuccess($section)
     {
-        $this->render('result');
+        $session = Yii::app()->session;
+        $section = $this->_initSection($section);
+        $question = $session->get('question');
+        if (!isset($question[$section->section_id])) {
+            return $this->redirect($section->getUrl());
+        }
+        $question[$section->section_id]['finished'] = true;
+        
+        $session->add('question', $question);
+        
+        $result = new Result();
+        $result->setSection($section)
+            ->setUser(Yii::app()->user->id);
+
+        $result->processResult($question[$section->section_id]);
+        
+        if ($result->save()) {
+            return $this->redirect($section->getUrl() . '/result/' . $result->result_id);
+        }
+
+    }
+
+    /**
+     * Show result action
+     *
+     * @param string $section  section name
+     * @param int    $question question number
+     *
+     * @return void
+     */
+    public function actionResult($section, $id)
+    {
+        $result = Result::model()->findByPk($id);
+        $this->render('result', array('result' => $result));
     }
 
     /**
@@ -47,7 +91,7 @@ class QuizController extends Controller
      * @param string $section  section name
      * @param int    $question question number
      *
-     * @return [type]           [description]
+     * @return void
      */
     public function actionQuestion($section, $id)
     {
@@ -65,6 +109,17 @@ class QuizController extends Controller
         
         $this->render('index', array('section' => $section, 'question' => $question, 'number' => $id));
     }
+
+    /**
+     * Ajax get question redirects to question action
+     * 
+     * For history js cache prevent
+     *
+     * @param string $section section name
+     * @param int    $id      question id
+     *
+     * @return void
+     */
     public function actionAjaxquestion($section, $id)
     {
         return $this->actionQuestion($section, $id);

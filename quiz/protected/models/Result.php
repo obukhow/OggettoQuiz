@@ -203,7 +203,8 @@ class Result extends CActiveRecord
         $this->right_answers_count = 0;
         $this->results = $result;
         $themes = array();
-        foreach ($this->getSection()->getRelated('questions') as $questionId => $question) {
+        foreach ($this->getSection()->getRelated('questions') as $question) {
+            $questionId = $question->question_id;
             if (!$question->hasRightAnswer()) {
                 continue;
             }

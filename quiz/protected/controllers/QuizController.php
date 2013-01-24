@@ -96,6 +96,7 @@ class QuizController extends Controller
         if ($result->save()) {
             return $this->redirect($section->getUrl() . '/result/' . $result->result_id);
         }
+        return redirect($section->getUrl());
 
     }
 

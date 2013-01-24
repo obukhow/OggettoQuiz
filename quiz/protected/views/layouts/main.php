@@ -41,9 +41,21 @@
 
 		<div class="clear"></div>
 
-		<div id="footer">
-			&copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
-			All Rights Reserved.<br/>
+		<div id="footer" class="row">
+			<div class="span8">
+				&copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
+				All Rights Reserved.<br/>
+			</div>
+			<div class="span4">
+				<?php if (!Yii::app()->user->isGuest): ?>
+					<div class="user-avatar" style="<?php if ($url = Yii::app()->user->getState('photo_url')) echo "background-image: url('$url');" ?>">
+					</div>
+					<div class="user-name">
+						<strong><?php echo Yii::app()->user->name ?></strong><br/>
+						<a href="<?php echo Yii::app()->createAbsoluteUrl('site/logout') ?>">Logout</a>
+					</div>
+				<?php endif; ?> 
+			</div>
 		</div><!-- footer -->
 
 	</div><!-- page -->

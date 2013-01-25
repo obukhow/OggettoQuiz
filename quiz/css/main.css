@@ -274,7 +274,9 @@ div.search-form
 	font-weight: normal;
 	font-family: 'Lobster', cursive !important;
 }
-
+a.btn {
+	text-decoration: none;
+}
 .operations li a:hover
 {
 	background: #80CFFF;

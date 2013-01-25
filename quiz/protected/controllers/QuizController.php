@@ -94,6 +94,7 @@ class QuizController extends Controller
         $result->processResult($question[$section->section_id]);
         
         if ($result->save()) {
+            $session->remove('question');
             return $this->redirect($section->getUrl() . '/result/' . $result->result_id);
         }
         return redirect($section->getUrl());

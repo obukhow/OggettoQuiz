@@ -21,7 +21,7 @@
 
     <div id="mainmenu">
         <?php $this->widget('bootstrap.widgets.TbNavbar',array(
-            'brand'=>'Quiz Manager',
+            'brand'=>'Labs Admin Panel',
             'items'=>array(
                 array(
                     'class' =>'bootstrap.widgets.TbMenu',

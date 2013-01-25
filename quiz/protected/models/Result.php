@@ -37,6 +37,9 @@ class Result extends CActiveRecord
         if (!$this->right_percent_amount) {
             $this->right_percent_amount = $this->getRightAnswersPercent();
         }
+        if (!$this->passed_at) {
+            $this->passed_at = date('Y-m-d H:i:s');
+        }
         return parent::beforeSave();
     }
 
@@ -138,8 +141,8 @@ class Result extends CActiveRecord
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'user' => array(self::BELONGS_TO, 'Users', 'user_id'),
-            'section' => array(self::BELONGS_TO, 'QuizSections', 'section_id'),
+            'user' => array(self::BELONGS_TO, 'User', 'user_id'),
+            'section' => array(self::BELONGS_TO, 'Section', 'section_id'),
         );
     }
 
@@ -186,6 +189,9 @@ class Result extends CActiveRecord
 
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,
+            'sort' => array(
+                 'defaultOrder' => 'result_id DESC'
+             ),
         ));
     }
 

@@ -12,7 +12,8 @@
     ?>
     <?php switch ($question->type) :
             case $question::TYPE_ONECHOICE:
-            case $question::TYPE_MULTICHOICE: ?>
+            case $question::TYPE_MULTICHOICE:
+            case $question::TYPE_POLL: ?>
                 <?php $i = 0; foreach ($question->getRelated('answers') as $answer) : ?>
                 <label class="<?php echo ($question->type == $question::TYPE_ONECHOICE) ? 'radio' : 'checkbox' ?>">
                     <input type="<?php echo ($question->type == $question::TYPE_ONECHOICE) ? "radio" : 'checkbox' ?>"

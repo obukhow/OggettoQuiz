@@ -25,7 +25,7 @@
 	<div class="container" id="page">
 		<div class="row">
 			<div class="span12">
-				<img src="<?php echo Yii::app()->request->baseUrl ?>/images/clear_logo.png" class="logo"/>
+				<a href="<?php echo Yii::app()->getRequest()->getBaseUrl(true) ?>" title="<?php echo CHtml::encode(Yii::app()->name); ?>"><img src="<?php echo Yii::app()->request->baseUrl ?>/images/clear_logo.png" class="logo"/></a>
 			</div>
 		</div>
 

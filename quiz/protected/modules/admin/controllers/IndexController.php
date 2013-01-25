@@ -8,7 +8,7 @@
  * @package    intellitalent
  * @subpackage controllers
  */
-class IndexController extends Controller
+class IndexController extends AbstractController
 {
     public $layout = 'column1';
     protected $_type = 'User';

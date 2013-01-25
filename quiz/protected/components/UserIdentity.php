@@ -27,7 +27,7 @@ class UserIdentity extends CUserIdentity
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
         } else {
             $this->_id = $record->user_id;
-            $this->setState(' ', $record->name);
+            $this->setState('fullname', $record->name);
             $this->setState('email', $record->email);
             $this->setState('photo_url', $record->photo_url);
             $this->setState('roles', ($record->role)?User::ADMIN_ROLE:User::GUEST_ROLE);

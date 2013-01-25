@@ -20,5 +20,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'section_id',
 		'title',
+                'url',
+                'description'
 	),
 )); ?>

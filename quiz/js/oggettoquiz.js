@@ -50,7 +50,12 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     }
 
     this.finish = function(){
-        alert('You finished!');
+        if (confirm('Are you shure you want to finish?')) {
+            var self = this;
+            this._beforeStep().done( function() {
+                document.location.href = self.baseUrl + '/success';
+            });
+        }
     }
 
     this.next = function() {
@@ -72,7 +77,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
             cache.html = this.cloneContent();
             this.saveCache(this.currentUrl, cache);
         }
-        this.saveQuestion(this.currentUrl);
+        return this.saveQuestion(this.currentUrl);
     }
 
     this._afterStep = function() {
@@ -104,11 +109,9 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         this.contentCurrent = this.content.serialize();
 
         if(this.contentCached !== this.contentCurrent) {
-            $.post(
+            return $.post(
                 baseUrl + '/postQuestion',
-                this.content.serialize(),
-                function(response) {
-                }
+                this.content.serialize()
             );
         }
     }

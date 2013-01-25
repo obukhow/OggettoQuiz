@@ -1,12 +1,11 @@
 <?php
 /* @var $this QuizController */
-
-$this->breadcrumbs=array(
-	'Quiz'=>array('/quiz'),
-	'Result',
-);
+/* @var $result Result */
 ?>
-<h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
+<h1><?php if ($result->total_questions_count > 0): ?>
+        <?php echo Yii::t('app','You result is {result}%', array('{result}' => round($result->getRightAnswersPercent()))); ?>
+    <?php endif; ?>
+</h1>
 
 <p>
 	You may change the content of this page by modifying

@@ -2,6 +2,34 @@
 
 class QuizController extends Controller
 {
+     /**
+     * @return array action filters
+     */
+    public function filters()
+    {
+        return array(
+            'accessControl', // perform access control for CRUD operations
+        );
+    }
+
+     /**
+     * Specifies the access control rules.
+     * This method is used by the 'accessControl' filter.
+     * @return array access control rules
+     */
+    public function accessRules()
+    {
+        return array(
+            array('allow', // allow authenticated user to perform 'create' and 'update' actions
+                'actions'=>array('index', 'PostQuestion', 'Result', 'Ajaxquestion', 'question', 'success'),
+                'users'=>array('@'),
+            ),
+            array('deny',  // deny all users
+                'users'=>array('*'),
+            ),
+        );
+    }
+
     /**
      * Include js files
      *
@@ -16,14 +44,74 @@ class QuizController extends Controller
         $markdown->registerClientScript();
 
     }
+
+    /**
+     * Post question
+     *
+     * @return void
+     */
     public function actionPostQuestion()
     {
-        $this->render('postQuestion');
+        $question = Yii::app()->getRequest()->getPost('question');
+        $session = Yii::app()->session;
+        if (!$question && !is_array($question)) {
+            return;
+        }
+        foreach ($question as $sectionId => $_answer) {
+            $question = $session->get('question', array());
+            if (!isset($question[$sectionId])) {
+                $question[$sectionId] = array();
+            }
+            foreach ($_answer as $__questionId => $__answers) {
+                $question[$sectionId][$__questionId] = $__answers;
+            }
+            $session->add('question', $question);
+        }
+
     }
 
-    public function actionResult()
+    /**
+     * Process result action
+     *
+     * @return void
+     */
+    public function actionSuccess($section)
     {
-        $this->render('result');
+        $session = Yii::app()->session;
+        $section = $this->_initSection($section);
+        $question = $session->get('question');
+        if (!isset($question[$section->section_id])) {
+            return $this->redirect($section->getUrl());
+        }
+        $question[$section->section_id]['finished'] = true;
+        
+        $session->add('question', $question);
+        
+        $result = new Result();
+        $result->setSection($section)
+            ->setUser(Yii::app()->user->id);
+
+        $result->processResult($question[$section->section_id]);
+        
+        if ($result->save()) {
+            return $this->redirect($section->getUrl() . '/result/' . $result->result_id);
+        }
+        return redirect($section->getUrl());
+
+    }
+
+    /**
+     * Show result action
+     *
+     * @param string $section  section name
+     * @param int    $question question number
+     *
+     * @return void
+     */
+    public function actionResult($section, $id)
+    {
+        $result = Result::model()->findByPk($id);
+        $this->render('result', array('result' => $result));
     }
 
     /**
@@ -32,7 +120,7 @@ class QuizController extends Controller
      * @param string $section  section name
      * @param int    $question question number
      *
-     * @return [type]           [description]
+     * @return void
      */
     public function actionQuestion($section, $id)
     {
@@ -47,9 +135,20 @@ class QuizController extends Controller
             echo CJSON::encode($result);
             Yii::app()->end();
         }
-        
+
         $this->render('index', array('section' => $section, 'question' => $question, 'number' => $id));
     }
+
+    /**
+     * Ajax get question redirects to question action
+     * 
+     * For history js cache prevent
+     *
+     * @param string $section section name
+     * @param int    $id      question id
+     *
+     * @return void
+     */
     public function actionAjaxquestion($section, $id)
     {
         return $this->actionQuestion($section, $id);
@@ -78,7 +177,7 @@ class QuizController extends Controller
      */
     protected function _initSection($sectionName)
     {
-        $section = Section::model()->findByAttributes(array('title' => $sectionName));
+        $section = Section::model()->findByAttributes(array('url' => $sectionName));
         if ($section == null) {
             throw new CHttpException(404,'The requested page does not exist.');
         }

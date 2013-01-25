@@ -3,9 +3,12 @@
 
 ?>
 
+
 <form id="page-content" action="#">
     <?php if ($question) {
         $this->renderPartial('question', array('question' => $question));
+    } else {
+        echo $section->description;
     }
     ?>
 </form>

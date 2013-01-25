@@ -5,7 +5,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Section','url'=>array('index')),
 	array('label'=>'Create Section','url'=>array('create')),
 );
 

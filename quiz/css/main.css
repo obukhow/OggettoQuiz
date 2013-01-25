@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	color: #333;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF url('../images/gray_jean.png');
+	background: #EFEFEF url('../images/gray_jean.png') 0 0 repeat;
 }
 .curtain {
 	display: none;
@@ -19,7 +19,7 @@ body {
 	z-index: 1;
 	left: 0;
 	top: 0;
-	background-color: #fff;
+	background: #EFEFEF url('../images/gray_jean.png') 0 0 repeat;
 	opacity: 0.5;
 }
 .curtain.visible {

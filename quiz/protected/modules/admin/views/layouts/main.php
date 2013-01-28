@@ -21,14 +21,15 @@
 
     <div id="mainmenu">
         <?php $this->widget('bootstrap.widgets.TbNavbar',array(
-            'brand'=>'Labs Admin Panel',
-            'items'=>array(
+            'brand' => 'Labs Admin Panel',
+            'items' => array(
                 array(
                     'class' =>'bootstrap.widgets.TbMenu',
                     'items' => array(
-                        array('label'=>'Manage Quiz', 'url'=>'#', 'items'=> array(
-                                array('label'=>'Sections', 'url'=>array('/admin/section')),
-                                array('label'=>'Questions', 'url'=>array('/admin/question')),
+                        array('label'=>'Quizes', 'url'=>'#', 'items'=> array(
+                                array('label' => 'Sections', 'url'=>array('/admin/section')),
+                                array('label' => 'Questions', 'url'=>array('/admin/question')),
+                                array('label' => 'Results',   'url'=>array('/admin/result')),
                             )),
                         array('label'=>'Users', 'url'=>array('/admin/user/admin')),
                         array('label'=>'Contact', 'url'=>array('/site/contact')),
@@ -54,13 +55,15 @@
 
     <div class="clear"></div>
 
-    <div id="footer">
-        &copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
-        All Rights Reserved.<br/>
-        <?php echo Yii::powered(); ?>
-    </div><!-- footer -->
 
 </div><!-- page -->
+    <footer class="footer">
+        <div class="container">
+            &copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
+            All Rights Reserved.<br/>
+            <?php echo Yii::powered(); ?>
+        </div><!-- footer -->
+    </footer>
 
 </body>
 </html>

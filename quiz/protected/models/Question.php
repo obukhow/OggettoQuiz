@@ -101,6 +101,26 @@ class Question extends CActiveRecord
     }
 
     /**
+     * Check if answer is selected
+     *
+     * @param  QuestionsAnswer $answer answer
+     * @param  Array           $result result
+     *
+     * @return boolean
+     */
+    public function isSelectedAnswer(QuestionsAnswer $answer, Array $result)
+    {
+        if (!isset($result[$this->question_id])) {
+            return false;
+        }
+        $result = $result[$this->question_id];
+        if (!is_array($result)) {
+            return ($answer->answer_id == $result);
+        }
+        return (in_array($answer->answer_id, $result));
+    }
+
+    /**
      * @return array validation rules for model attributes.
      */
     public function rules()

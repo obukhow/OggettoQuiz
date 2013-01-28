@@ -67,6 +67,19 @@ class Result extends CActiveRecord
     }
 
     /**
+     * Get result array
+     *
+     * @return array
+     */
+    public function getResult()
+    {
+        if (!is_array($this->results)) {
+            return unserialize($this->results);
+        }
+        return $this->results;
+    }
+
+    /**
      * @return string the associated database table name
      */
     public function tableName()

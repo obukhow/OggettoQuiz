@@ -22,6 +22,7 @@ class AbstractController extends Controller
     public function init()
     {
         Yii::app()->bootstrap->register();
+        Yii::app()->getClientScript()->registerCssFile(Yii::app()->getRequest()->getBaseUrl() . '/css/admin.css');
     }
 
     /**

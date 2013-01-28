@@ -73,9 +73,13 @@ class ResultController extends AbstractController
      */
     public function actionIndex()
     {
-        $dataProvider=new CActiveDataProvider('Result');
-        $this->render('index',array(
-            'dataProvider'=>$dataProvider,
+        $model=new Result('search');
+        $model->unsetAttributes();  // clear any default values
+        if(isset($_GET['Result']))
+            $model->attributes=$_GET['Result'];
+
+        $this->render('admin',array(
+            'model'=>$model,
         ));
     }
 
@@ -102,8 +106,9 @@ class ResultController extends AbstractController
     public function loadModel($id)
     {
         $model=Result::model()->findByPk($id);
-        if($model===null)
+        if ($model===null) {
             throw new CHttpException(404,'The requested page does not exist.');
+        }
         return $model;
     }
 

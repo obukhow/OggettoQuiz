@@ -14,11 +14,7 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('passed_at')); ?>:</b>
 	<?php echo CHtml::encode($data->passed_at); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('results')); ?>:</b>
-	<?php echo CHtml::encode($data->results); ?>
-	<br />
+	<br />s
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('total_questions_count')); ?>:</b>
 	<?php echo CHtml::encode($data->total_questions_count); ?>

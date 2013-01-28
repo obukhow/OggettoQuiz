@@ -209,6 +209,36 @@ class Result extends CActiveRecord
     }
 
     /**
+     * Filter for user results grid
+     *
+     * @param int $userId user id
+     *
+     * @return CActiveDataProvider
+     */
+    public function searchByUserid($userId)
+    {
+        $criteria=new CDbCriteria;
+
+        $criteria->compare('result_id',$this->result_id);
+        $criteria->compare('section_id',$this->section_id);
+        $criteria->compare('user_id',$this->user_id);
+        $criteria->compare('passed_at',$this->passed_at,true);
+        $criteria->compare('results',$this->results,true);
+        $criteria->compare('total_questions_count',$this->total_questions_count);
+        $criteria->compare('right_answers_count',$this->right_answers_count);
+        $criteria->compare('wrong_answers_count',$this->wrong_answers_count);
+        $criteria->compare('right_percent_amount',$this->right_percent_amount,true);
+        $criteria->condition = "user_id = $userId";
+
+        return new CActiveDataProvider($this, array(
+            'criteria'=>$criteria,
+            'sort' => array(
+                 'defaultOrder' => 'result_id DESC'
+             ),
+        ));
+    }
+
+    /**
      * process result
      *
      * @param Array $result result

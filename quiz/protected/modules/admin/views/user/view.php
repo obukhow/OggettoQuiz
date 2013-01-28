@@ -5,11 +5,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List User','url'=>array('index')),
-	array('label'=>'Create User','url'=>array('create')),
-	array('label'=>'Update User','url'=>array('update','id'=>$model->user_id)),
-	array('label'=>'Delete User','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->user_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage User','url'=>array('admin')),
+	array('label'=>'Manage Users','url'=>array('admin')),
+    array('label'=>'Create User','url'=>array('create')),
+    array('label'=>'Update User','url'=>array('update','id'=>$model->user_id)),
+    array('label'=>'Delete User','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->user_id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 
@@ -26,30 +25,87 @@ $this->menu=array(
                     'label' => 'Role',
                     'value' => User::getRole($model->role)
                 ),
-		'password',
 		'is_oggetto',
 	),
 )); ?>
+<ul>
 <?php if ($model->twitter_id): ?>
-    <a href="http://twitter.com/intent/user?user_id=<?php echo $model->twitter_id ?>" target="_blank" />Twitter</a>
+    <li>
+        <a href="http://twitter.com/intent/user?user_id=<?php echo $model->twitter_id ?>" target="_blank" />Twitter</a>
+    </li>
 <?php endif; ?>
 <?php if ($model->facebook_id): ?>
-    <a href="http://www.facebook.com/profile.php?id=<?php echo $model->facebook_id ?>" target="_blank" />Facebook</a>
+    <li>
+        <a href="http://www.facebook.com/profile.php?id=<?php echo $model->facebook_id ?>" target="_blank" />Facebook</a>
+    </li>
 <?php endif; ?>
 <?php if ($model->github_id): ?>
-    <a href="https://github.com/<?php echo $model->github_id ?>" target="_blank" />Github</a>
+    <li>
+        <a href="https://github.com/<?php echo $model->github_id ?>" target="_blank" />Github</a>
+    </li>
 <?php endif; ?>
 <?php if ($model->google_id): ?>
-    <a href="http://profiles.google.com/<?php echo $model->google_id ?>" target="_blank" />Google</a>
+    <li>
+        <a href="http://profiles.google.com/<?php echo $model->google_id ?>" target="_blank" />Google</a>
+    </li>
 <?php endif; ?>
 <?php if ($model->linkedin_id): ?>
-    <a href="http://www.linkedin.com/profile/view?id=<?php echo $model->linkedin_id ?>" target="_blank" />LinkedIn</a>
+    <li>
+        <a href="http://www.linkedin.com/profile/view?id=<?php echo $model->linkedin_id ?>" target="_blank" />LinkedIn</a>
+    </li>
 <?php endif; ?>
 <?php if ($model->vk_id): ?>
-    <a href="http://vk.com/id<?php echo $model->vk_id ?>" target="_blank" />VK</a>
+    <li>
+        <a href="http://vk.com/id<?php echo $model->vk_id ?>" target="_blank" />VK</a>
+    </li>
 <?php endif; ?>
 <?php if ($model->yandex_id): ?>
-    <a href="<?php echo $model->getYandexUrl() ?>" target="_blank" />Yandex</a>
+    <li>
+        <a href="<?php echo $model->getYandexUrl() ?>" target="_blank" />Yandex</a>
+    </li>
 <?php endif; ?>
+</ul>
+
+
+<h1>User's Results</h1>
+
+<?php $this->widget('bootstrap.widgets.TbGridView',array(
+    'id' => 'result-grid',
+    'dataProvider' => $result->searchByUserId($model->user_id),
+    'filter' => $result,
+    'columns' => array(
+        'result_id',
+        array(
+            'filter' => CHtml::listData(Section::model()->findAll(), 'section_id','title'),
+            'name' => 'section_id',
+            'value'=>'$data->section->title'
+        ),
+        array(
+            'name'  => 'user_id',
+            'value' => '$data->user->name'
+        ),
+        'passed_at',
+        'total_questions_count',
+        array(
+            'name'  => 'right_percent_amount',
+            'value' => '$data->right_percent_amount . \'%\'',
+        ),
+        
+        array(
+            'class' => 'bootstrap.widgets.TbButtonColumn',
+            'template' => '{view} {delete}',
+            'buttons' => array(
+                    'view' => array(
+                        'label' => 'View',
+                        'url' => 'Yii::app()->createUrl("/admin/result/view", array("id"  => $data->result_id))',
+                    ),
+                    'delete' => array(
+                        'label' => 'Delete',
+                        'url' => 'Yii::app()->createUrl("/admin/result/delete", array("id"  => $data->result_id))',
+                    ),
+                ),
+            ),
+    ),
+)); ?>
 
 

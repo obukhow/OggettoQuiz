@@ -112,7 +112,8 @@ class QuizController extends Controller
     public function actionResult($section, $id)
     {
         $result = Result::model()->findByPk($id);
-        $this->render('result', array('result' => $result));
+        $section = $this->_initSection($section);
+        $this->render('result', array('result' => $result, 'section' => $section));
     }
 
     /**

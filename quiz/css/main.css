@@ -109,6 +109,24 @@ h1 {
 	background: url('../images/loginbg.jpg') no-repeat;
 	border-radius: 5px;
 }
+.index {
+	background: url('../images/index.jpg') no-repeat;
+	border-radius: 5px;
+	height: 400px;
+	padding: 15px 0;
+}
+.index h2 {
+	color: #464646;
+}
+.group-iconed {
+	padding-left: 105px;
+}
+.group-iconed li a{
+	color: #333;
+}
+.tests {
+	background: url('../images/quizicon.png') left top no-repeat;
+}
 div.flash-error, div.flash-notice, div.flash-success
 {
 	padding:.8em;

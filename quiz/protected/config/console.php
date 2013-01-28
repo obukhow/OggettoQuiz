@@ -10,7 +10,7 @@ return array(
        ),
        'components' => array(
            'db' => array(
-               'connectionString' => 'mysql:host=localhost;dbname=quiz',
+               'connectionString' => 'mysql:unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock;dbname=quiz;',
                'emulatePrepare'   => true,
                'username'         => 'root',
                'password'         => 'root',

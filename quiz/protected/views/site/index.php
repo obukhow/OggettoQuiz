@@ -4,11 +4,17 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<div class="row index">
+    <div class="span12">
+        <h1>Добро пожаловать в <?php echo CHtml::encode(Yii::app()->name); ?></h1>
 
-<h2>Тесты</h2>
-<ul class="inline-list">
-    <?php foreach (Section::model()->findAll() as $section): ?>
-        <li><a href="<?php echo $section->getUrl() ?>"><?php echo $section->title ?></a></li>
-    <?php endforeach; ?>
-</ul>
+        <div class="group-iconed tests">
+            <h2>Тесты</h2>
+            <ul class="inline-list">
+                <?php foreach (Section::model()->findAll() as $section): ?>
+                    <li><a href="<?php echo $section->getUrl() ?>"><?php echo $section->title ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>

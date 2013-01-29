@@ -115,8 +115,9 @@ h3 {
 .index {
 	background: url('../images/index.jpg') no-repeat;
 	border-radius: 5px;
-	height: 400px;
-	padding: 15px 0;
+	padding: 10px 0;
+	background-position: 0px -57px;
+	margin-bottom: 15px;
 }
 .index h2 {
 	color: #464646;

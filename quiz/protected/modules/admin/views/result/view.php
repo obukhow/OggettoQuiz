@@ -5,10 +5,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Result','url'=>array('index')),
-	array('label'=>'Update Result','url'=>array('update','id'=>$model->result_id)),
-	array('label'=>'Delete Result','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->result_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Result','url'=>array('admin')),
+    array('label'=>'Operations'),
+	array('label'=>'List Results',  'icon' => 'list', 'url'=>array('index')),
+	array('label'=>'Update Result', 'icon' => 'edit', 'url'=>array('update','id'=>$model->result_id)),
+	array('label'=>'Delete Result', 'icon' => 'trash', 'url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->result_id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 
@@ -77,7 +77,7 @@ $this->menu=array(
                 <?php endforeach; ?>
         <?php break;
             case $question::TYPE_FREEFORM: ?>
-            <?php echo CHtml::encode('text') ?>
+            <?php echo CHtml::encode($question->getAnswerText($model->getResult())) ?>
     <?php endswitch ?>
 </li>
 <?php endforeach; ?>

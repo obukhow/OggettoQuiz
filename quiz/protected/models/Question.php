@@ -168,6 +168,21 @@ class Question extends CActiveRecord
     }
 
     /**
+     * Get free form question answer
+     *
+     * @param array $result result
+     *
+     * @return string
+     */
+    public function getAnswerText($result)
+    {
+        if (!isset($result[$this->question_id])) {
+            return false;
+        }
+        return $result[$this->question_id];
+    }
+
+    /**
      * Get question type option
      *
      * @return array

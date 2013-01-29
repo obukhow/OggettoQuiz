@@ -11,6 +11,6 @@ class m130122_130713_add_fields_to_section extends CDbMigration
 	public function safeDown()
 	{
             $this->dropColumn(' quiz_sections', 'description');
-            $this->addColumn('quiz_sections', 'url', 'string');
+            $this->dropColumn('quiz_sections', 'url', 'string');
 	}
 }

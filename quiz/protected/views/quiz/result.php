@@ -3,15 +3,19 @@
 /* @var $result Result */
 ?>
 <h1><?php if ($result->total_questions_count > 0): ?>
-        <?php echo Yii::t('app','Your result is {result}%', array('{result}' => round($result->getRightAnswersPercent()))); ?>
+        <?php echo Yii::t('app','Вы набрали {result}%', array('{result}' => round($result->getRightAnswersPercent()))); ?>
     <?php endif; ?>
 </h1>
 
+<?php if ($result->getThemes()): ?>
+    <h3>Стоит повторить темы</h3>
+     <p><?php echo $result->getThemes() ?></p>
+<?php endif; ?>
 
 <h3>Поделитесь результатом</h3>
 
 <!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<div class="social-buttons addthis_toolbox addthis_default_style addthis_32x32_style">
 <a class="addthis_button_twitter"></a>
 <a class="addthis_button_facebook"></a>
 <a class="addthis_button_vk"></a>

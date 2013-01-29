@@ -1,6 +1,7 @@
 quiz/protected/runtime/
 quiz/protected/config/local.php
 quiz/protected/config/main.php
+quiz/protected/config/console.php
 quiz/assets
 themes/classic/views/
 .DS_STORE

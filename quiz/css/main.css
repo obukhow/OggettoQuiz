@@ -105,6 +105,9 @@ h1 {
 	font-weight: normal !important;
 	margin-bottom: 0.6em !important;
 }
+h3 {
+	color: #888;
+}
 .login-form {
 	background: url('../images/loginbg.jpg') no-repeat;
 	border-radius: 5px;
@@ -306,3 +309,11 @@ pre {
 	-o-user-select: none;
 	user-select: none;
 }
+
+.social-buttons {
+ filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+ filter: gray; /* IE6-9 */
+ filter: grayscale(1);
+ -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */}
+ .social-buttons:hover {filter: none;
+ -webkit-filter: grayscale(0); filter: grayscale(0);}

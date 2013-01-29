@@ -13,6 +13,7 @@
  * @property integer $right_answers_count
  * @property integer $wrong_answers_count
  * @property string $right_percent_amount
+ * @property string $themes
  *
  * The followings are the available model relations:
  * @property Users $user
@@ -39,6 +40,9 @@ class Result extends CActiveRecord
         }
         if (!$this->passed_at) {
             $this->passed_at = date('Y-m-d H:i:s');
+        }
+        if ($this->_themes) {
+            $this->themes = serialize($this->_themes);
         }
         return parent::beforeSave();
     }
@@ -77,6 +81,19 @@ class Result extends CActiveRecord
             return unserialize($this->results);
         }
         return $this->results;
+    }
+
+    /**
+     * Get themes
+     *
+     * @return string
+     */
+    public function getThemes()
+    {
+        if (!$this->themes) {
+            return null;
+        }
+        return implode(', ', unserialize($this->themes));
     }
 
     /**
@@ -139,7 +156,7 @@ class Result extends CActiveRecord
             array('section_id, user_id, results, total_questions_count, right_answers_count, wrong_answers_count', 'required'),
             array('section_id, user_id, total_questions_count, right_answers_count, wrong_answers_count', 'numerical', 'integerOnly'=>true),
             array('right_percent_amount', 'length', 'max'=>10),
-            array('passed_at, results', 'safe'),
+            array('passed_at, results, themes', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
             array('result_id, section_id, user_id, passed_at, results, total_questions_count, right_answers_count, wrong_answers_count, right_percent_amount', 'safe', 'on'=>'search'),
@@ -176,6 +193,7 @@ class Result extends CActiveRecord
             'right_answers_count'   => 'Right Answers Count',
             'wrong_answers_count'   => 'Wrong Answers Count',
             'right_percent_amount'  => 'Right Percent Amount',
+            'themes'                => 'Wrong themes',
         );
     }
 
@@ -251,7 +269,6 @@ class Result extends CActiveRecord
         $this->wrong_answers_count = 0;
         $this->right_answers_count = 0;
         $this->results = $result;
-        $themes = array();
         foreach ($this->getSection()->getRelated('questions') as $question) {
             $questionId = $question->question_id;
             if (!$question->hasRightAnswer()) {
@@ -261,7 +278,7 @@ class Result extends CActiveRecord
 
             if (!isset($result[$questionId]) || !$question->isValidResult($result[$questionId])) {
                 $this->wrong_answers_count++;
-                $theme[] = $question->theme;
+                $this->_themes[] = $question->theme;
                 continue;
             }
             $this->right_answers_count++;

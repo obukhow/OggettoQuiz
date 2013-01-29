@@ -8,7 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Questions', 'url'=>array('index')),
+    array('label'=>'OPERATIONS'),
+	array('label'=>'List Questions', 'icon' => 'list', 'url'=>array('index')),
 );
 ?>
 <?php 

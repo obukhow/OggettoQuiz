@@ -9,15 +9,12 @@
     <div class="span3">
         <div id="sidebar">
         <?php
-            $this->beginWidget('zii.widgets.CPortlet', array(
-                'title'=>'Operations',
-            ));
+
             $this->widget('bootstrap.widgets.TbMenu', array(
                 'type'=>'list',
                 'items'=>$this->menu,
-                'htmlOptions'=>array('class'=>'operations'),
+                'htmlOptions' => array('class' => 'well'),
             ));
-            $this->endWidget();
         ?>
         </div><!-- sidebar -->
     </div>

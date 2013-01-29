@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List User','url'=>array('index')),
-	array('label'=>'Create User','url'=>array('create')),
-	array('label'=>'View User','url'=>array('view','id'=>$model->user_id)),
-	array('label'=>'Manage User','url'=>array('admin')),
+    array('label'=>'Operations'),
+	array('label'=>'List Users',  'icon' => 'list', 'url'=>array('index')),
+	array('label'=>'Create User', 'icon' => 'plus', 'url'=>array('create')),
+	array('label'=>'View User',   'icon' => 'eye-open', 'url'=>array('view','id'=>$model->user_id)),
 );
 ?>
 

@@ -8,10 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Questions', 'url'=>array('index')),
-	array('label'=>'Create Question', 'url'=>array('create')),
-	array('label'=>'Update Question', 'url'=>array('update', 'id'=>$model->question_id)),
-	array('label'=>'Delete Question', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->question_id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label' => 'Operations'),
+	array('label'=>'List Questions', 'icon' => 'list', 'url'=>array('index')),
+	array('label'=>'Create Question', 'icon' => 'plus', 'url'=>array('create')),
+	array('label'=>'Update Question', 'icon' => 'edit', 'url'=>array('update', 'id'=>$model->question_id)),
+	array('label'=>'Delete Question', 'icon' => 'trash', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->question_id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 

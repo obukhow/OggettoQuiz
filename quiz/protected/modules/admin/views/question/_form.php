@@ -13,6 +13,7 @@ $section = new Section();
 	'id'                   => 'question-form',
 	'enableAjaxValidation' => false,
 	'type'                 => 'horizontal',
+    'action'               => Yii::app()->createAbsoluteUrl('admin/question/create'),
 )); ?>
 	<legend>Question</legend>
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -40,7 +41,7 @@ $section = new Section();
 	<div class="form-actions">
 		<?php if ($model->isNewRecord): ?>
 	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'Create')); ?>
-	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'button', 'type'=>'primary', 'label'=>'Save And Create New')); ?>
+	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'button', 'type'=>'primary', 'htmlOptions' => array('id' => 'saveAndCreate'), 'label'=>'Save And Create New')); ?>
 	    <?php else: ?>
 	    	<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=> 'Save')); ?>
 	    <?php endif; ?>
@@ -110,6 +111,14 @@ $(document).ready(function() {
 	$('#addButton').click(function() {
 		attributeOption.add();
 	});
+    if ($('#saveAndCreate')) {
+        $('#saveAndCreate').click(function() {
+            $('#question-form').attr('action', function(i, val) {
+                return val + '/return/1'
+            });
+            $('#question-form').submit();
+        });
+    }
 });
 
 <?php if ($model->answers()): ?>

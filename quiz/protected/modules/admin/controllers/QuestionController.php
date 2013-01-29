@@ -35,7 +35,11 @@ class QuestionController extends AbstractController
                 if (isset($_POST['answers'])) {
                     $this->_saveAnswers($model, $_POST['answers']);
                 }
-                $this->redirect(array('view','id'=>$model->question_id));
+                Yii::app()->user->setFlash('success', "Question created!");
+                if (Yii::app()->getRequest()->getParam('return')) {
+                    return $this->redirect(array('create'));
+                }
+                return $this->redirect(array('view','id'=>$model->question_id));
             }
         }
 

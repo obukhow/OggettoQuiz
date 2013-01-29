@@ -9,9 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Questions', 'url'=>array('index')),
-	array('label'=>'Create Question', 'url'=>array('create')),
-	array('label'=>'View Question', 'url'=>array('view', 'id'=>$model->question_id)),
+    array('label'=>'OPERATIONS'),
+	array('label'=>'List Questions', 'icon'=>'list', 'url'=>array('index')),
+	array('label'=>'Create Question', 'icon'=>'plus', 'url'=>array('create')),
+	array('label'=>'View Question', 'icon'=>'eye-open', 'url'=>array('view', 'id'=>$model->question_id)),
 );
 ?>
 

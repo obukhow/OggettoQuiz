@@ -35,7 +35,8 @@ class GitHubOAuthService extends EOAuth2Service {
 
         $this->attributes['id'] = $info->login;
         $this->attributes['name'] = $info->login;
-        $this->attributes['email'] = $info->email;
+        $simulateEmail = $info->login . '@github.com';
+        $this->attributes['email'] = ($info->email) ? : $simulateEmail;
         $this->attributes['url'] = $info->html_url;
         $this->attributes['service_id'] = 'github_id';
     }

@@ -24,7 +24,7 @@ class GoogleOAuthService extends EOAuth2Service {
 
 	protected $client_id = '';
 	protected $client_secret = '';
-	protected $scope = 'https://www.googleapis.com/auth/userinfo.profile';
+	protected $scope = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
 	protected $providerOptions = array(
 		'authorize' => 'https://accounts.google.com/o/oauth2/auth',
 		'access_token' => 'https://accounts.google.com/o/oauth2/token',
@@ -35,6 +35,7 @@ class GoogleOAuthService extends EOAuth2Service {
 				
 		$this->attributes['id'] = $info['id'];
 		$this->attributes['name'] = $info['name'];
+		$this->attributes['email'] = $info['email'];
 		
 		if (!empty($info['link']))
 			$this->attributes['url'] = $info['link'];

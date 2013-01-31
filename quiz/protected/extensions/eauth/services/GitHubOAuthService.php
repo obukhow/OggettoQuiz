@@ -24,7 +24,7 @@ class GitHubOAuthService extends EOAuth2Service {
 
 	protected $client_id = '';
 	protected $client_secret = '';
-	protected $scope = '';
+	protected $scope = 'user:email';
 	protected $providerOptions = array(
 		'authorize' => 'https://github.com/login/oauth/authorize',
 		'access_token' => 'https://github.com/login/oauth/access_token',
@@ -35,6 +35,7 @@ class GitHubOAuthService extends EOAuth2Service {
 
         $this->attributes['id'] = $info->login;
         $this->attributes['name'] = $info->login;
+        $this->attributes['email'] = $info->email;
         $this->attributes['url'] = $info->html_url;
         $this->attributes['service_id'] = 'github_id';
     }

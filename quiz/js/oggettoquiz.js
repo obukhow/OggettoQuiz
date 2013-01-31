@@ -43,6 +43,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     this.contentCached = this.contentCurrent = true;
     this.currentUrl;
     this.manualUpdate = false;
+    this.allowLeave = false;
 
     this.start = function() {
         this.currentQuestion++;
@@ -50,8 +51,9 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     }
 
     this.finish = function(){
-        if (confirm('Are you shure you want to finish?')) {
+        if (confirm('Вы уверены, что хотите закончить?')) {
             var self = this;
+            this.allowLeave = true;
             this._beforeStep().done( function() {
                 document.location.href = self.baseUrl + '/success';
             });
@@ -212,8 +214,18 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         this.counter.show().find('#counter-current').html(this.currentQuestion);
     }
 
+    this.beforeUnload = function() {
+        if (!$.browser.mozilla && !this.allowLeave) { //В firefox не показываем, так как беспонтово, своё сообщение там не вывести.
+                return "Вы собираетесь покинуть страницу не закончив тест.";
+        }
+    }
+
     this._init = function() {
         this.renderButtons();
+        var self = this;
+        $(window).bind('beforeunload', function(e) {
+                return self.beforeUnload();
+        });
     }
     this._init();
 }

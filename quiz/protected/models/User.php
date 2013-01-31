@@ -154,14 +154,13 @@ class User extends CActiveRecord
      */
     public function createUserByIdentity(CBaseUserIdentity $identity)
     {
-        
         if (!($user = $this->loadUserByIdentity($identity))) {
             $user = new self;
             $user->name       = $identity->getName();
             $user->email      = $identity->getState('email');
             $user->photo_url  = $identity->getState('photo');
             $user->password   = md5($this->generatePassword());
-            $user->is_oggetto = false;
+            $user->is_oggetto = 0;
         }
 
         if ($serviceId = $identity->getState('service_id')) {

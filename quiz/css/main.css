@@ -125,9 +125,6 @@ h3 {
 .group-iconed {
 	padding-left: 105px;
 }
-.group-iconed li a{
-	color: #333;
-}
 .tests {
 	background: url('../images/quizicon.png') left top no-repeat;
 }

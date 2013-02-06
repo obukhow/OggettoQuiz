@@ -9,7 +9,17 @@
 
 <?php if ($result->getThemes()): ?>
     <h3>Стоит повторить темы</h3>
-     <p><?php echo $result->getThemes() ?></p>
+     <p>
+    <?php if (count($result->getThemes()) > 1): ?>
+        <ul>
+            <?php foreach (array_unique($result->getThemes()) as $theme): ?>
+                <li><?php echo $theme; ?></li>
+            <?php endforeach; ?>
+        </ul>
+        <?php else: ?>
+            <?php echo $result->getThemes() ?>
+        <?php endif; ?>
+    </p>
 <?php endif; ?>
 
 <h3>Поделитесь результатом</h3>

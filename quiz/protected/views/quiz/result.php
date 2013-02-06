@@ -17,7 +17,7 @@
             <?php endforeach; ?>
         </ul>
         <?php else: ?>
-            <?php echo $result->getThemes() ?>
+            <?php echo current($result->getThemes()) ?>
         <?php endif; ?>
     </p>
 <?php endif; ?>

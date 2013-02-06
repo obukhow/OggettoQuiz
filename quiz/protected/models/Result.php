@@ -90,10 +90,7 @@ class Result extends CActiveRecord
      */
     public function getThemes()
     {
-        if (!$this->themes) {
-            return null;
-        }
-        return implode(', ', unserialize($this->themes));
+        return unserialize($this->themes);
     }
 
     /**

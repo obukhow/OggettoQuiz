@@ -5,6 +5,9 @@
 /* @var $section Section */
 
 $section = new Section();
+$method = ($model->getIsNewRecord())
+        ? 'create'
+        : 'update';
 ?>
 
 <div class="form">
@@ -13,7 +16,7 @@ $section = new Section();
 	'id'                   => 'question-form',
 	'enableAjaxValidation' => false,
 	'type'                 => 'horizontal',
-    'action'               => Yii::app()->createAbsoluteUrl('admin/question/create'),
+    'action'               => Yii::app()->createAbsoluteUrl('admin/question/' . $method),
 )); ?>
 	<legend>Question</legend>
 	<p class="note">Fields with <span class="required">*</span> are required.</p>

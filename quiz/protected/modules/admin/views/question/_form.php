@@ -7,7 +7,7 @@
 $section = new Section();
 $method = ($model->getIsNewRecord())
         ? 'create'
-        : 'update';
+        : "update/id/$model->question_id";
 ?>
 
 <div class="form">

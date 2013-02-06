@@ -50,7 +50,7 @@ class VKontakteOAuthService extends EOAuth2Service {
 		if (!empty($info->nickname))
 			$this->attributes['email'] = $info->nickname . '@vk.com';
 		else
-			$this->attributes['username'] = $info->uid . '@vk.com';
+			$this->attributes['email'] = $info->uid . '@vk.com';
 		/*
 		$this->attributes['gender'] = $info->sex == 1 ? 'F' : 'M';
 

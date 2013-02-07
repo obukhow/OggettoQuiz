@@ -275,7 +275,9 @@ class Result extends CActiveRecord
 
             if (!isset($result[$questionId]) || !$question->isValidResult($result[$questionId])) {
                 $this->wrong_answers_count++;
-                $this->_themes[] = $question->theme;
+                if ($question->theme) {
+                    $this->_themes[] = $question->theme;
+                }
                 continue;
             }
             $this->right_answers_count++;

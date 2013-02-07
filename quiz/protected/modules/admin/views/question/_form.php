@@ -28,7 +28,8 @@ $method = ($model->getIsNewRecord())
             <?php echo $form->textFieldRow($model,'title', array('class'=>'span6')); ?>
 			<?php echo $form->textAreaRow($model,'text', array('class'=>'span6', 'rows'=>5)); ?>
 			<?php echo $form->radioButtonListRow($model, 'type', $model->getTypeOptions()); ?>
-			<?php echo $form->textFieldRow($model,'theme',array('size'=>60,'maxlength'=>500)); ?>
+            <?php echo $form->textFieldRow($model,'theme',array('size'=>60,'maxlength'=>500)); ?>
+			<?php echo $form->textFieldRow($model,'position',array('size'=>3,'maxlength'=>10)); ?>
 
 	</fieldset>
 	<legend>Answers</legend>

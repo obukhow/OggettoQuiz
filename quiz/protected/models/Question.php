@@ -129,7 +129,7 @@ class Question extends CActiveRecord
         // will receive user inputs.
         return array(
             array('section_id, title', 'required'),
-            array('section_id', 'numerical', 'integerOnly'=>true),
+            array('section_id, position', 'numerical', 'integerOnly'=>true),
             array('theme', 'length', 'max'=>500),
             array('title', 'length', 'max'=>255),
             array('type', 'length', 'max'=>1),
@@ -164,6 +164,7 @@ class Question extends CActiveRecord
             'text' => 'Text',
             'theme' => 'Theme',
             'type' => 'Type',
+            'position' => 'Position',
         );
     }
 

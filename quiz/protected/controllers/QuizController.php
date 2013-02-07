@@ -198,9 +198,10 @@ class QuizController extends Controller
     {
         $criteria = new CDbCriteria;
         $criteria->addCondition('t.section_id = :section_id');
-        $criteria->limit = 1;
+        $criteria->limit  = 1;
         $criteria->offset = ($id <= 0) ? 1 : $id - 1;
-        $criteria->params= array(':section_id' => $section->section_id);
+        $criteria->params = array(':section_id' => $section->section_id);
+        $criteria->order  = 'position, question_id'; 
         $question = Question::model()->find($criteria);
         return $question;
     }

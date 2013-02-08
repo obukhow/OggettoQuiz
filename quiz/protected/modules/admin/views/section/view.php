@@ -6,6 +6,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Operations'),
+    array('label'=>'Run Test', 'icon' => 'play', 'url' => $model->getUrl(), 'linkOptions' => array('target' => '_blank')),
 	array('label'=>'List Tests', 'icon' => 'list', 'url'=>array('index')),
 	array('label'=>'Create Test', 'icon' => 'plus', 'url'=>array('create')),
 	array('label'=>'Update Test', 'icon' => 'edit', 'url'=>array('update','id'=>$model->section_id)),
@@ -13,7 +14,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Test #<?php echo $model->section_id; ?></h1>
+<h1>View Test "<?php echo $model->title; ?>"</h1>
 
 <?php $this->widget('bootstrap.widgets.TbDetailView',array(
 	'data'=>$model,
@@ -28,7 +29,7 @@ $this->menu=array(
 <ol>
 <?php foreach ($model->getRelated('questions') as $question): ?>
 	<li class="question">
-    <h3><?php echo CHtml::encode($question->title) ?></h3>
+    <h3><a href="<?php echo $this->createUrl('question/update', array('id' => $question->question_id)) ?>" target="_blank" class="edit-link"><?php echo CHtml::encode($question->title) ?><span>Edit</span></a></h3>
 
     <?php if ($question->text) {
         $markdown = new CMarkdownParser;

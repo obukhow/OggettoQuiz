@@ -6,45 +6,51 @@ class QuestionController extends AbstractController
 
     /**
      * Displays a particular model.
+     * 
      * @param integer $id the ID of the model to be displayed
+     * @return void
      */
     public function actionView($id)
     {
-        $this->render('view',array(
-            'model'=>$this->loadModel($id),
+        $this->render('view', array(
+            'model' => $this->loadModel($id),
         ));
     }
 
     /**
      * Creates a new model.
      * If creation is successful, the browser will be redirected to the 'view' page.
+     * 
+     * @return void
      */
     public function actionCreate()
     {
-        $model=new Question;
+        $model = new Question;
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
-        if(isset($_POST['Question']))
-        {
-            $model->attributes=$_POST['Question'];
+        if (isset($_POST['Question'])) {
+            $model->attributes = $_POST['Question'];
 
             $result = $model->save();
-            if($model->save()) {
+            if ($model->save()) {
                 if (isset($_POST['answers'])) {
                     $this->_saveAnswers($model, $_POST['answers']);
                 }
                 Yii::app()->user->setFlash('success', "Question created!");
                 if (Yii::app()->getRequest()->getParam('return')) {
-                    return $this->redirect(array('create'));
+                    return $this->redirect(array('create', 'section' => $model->section_id));
                 }
-                return $this->redirect(array('view','id'=>$model->question_id));
+                return $this->redirect(array('view','id' => $model->question_id));
             }
+        }
+        if ($sectionId = Yii::app()->getRequest()->getParam('section')) {
+            $model->section_id = $sectionId;
         }
 
         $this->render('create',array(
-            'model'=>$model,
+            'model' => $model,
         ));
     }
 

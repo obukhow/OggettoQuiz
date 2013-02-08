@@ -61,12 +61,18 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     }
 
     this.next = function() {
+        if (this.currentQuestion == this.count) {
+            return this.finish();
+        }
         this._beforeStep();
         this.currentQuestion++;
         this._afterStep();
     }
 
     this.previous = function() {
+        if (this.currentQuestion == 1) {
+            return false;
+        }
         this._beforeStep();
         this.currentQuestion--;
         this._afterStep();
@@ -127,18 +133,20 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
             this.startBtn.show();
             return;
         }
+        this.prevBtn.show().addClass('disabled');
+        this.nextBtn.show().addClass('disabled');
 
         if(this.currentQuestion == this.count) {
-            this.prevBtn.show();
+            this.prevBtn.removeClass('disabled');
             this.finishBtn.show();
             return;
         }
 
         if(this.currentQuestion > 0) {
-            this.nextBtn.show();
+            this.nextBtn.removeClass('disabled');
         }
         if (this.currentQuestion > 1) {
-            this.prevBtn.show();
+            this.prevBtn.removeClass('disabled');
         }
     }
 

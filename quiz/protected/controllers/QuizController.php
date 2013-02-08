@@ -2,6 +2,7 @@
 
 class QuizController extends Controller
 {
+    public $layout='//layouts/quiz/column2';
      /**
      * @return array action filters
      */
@@ -37,6 +38,8 @@ class QuizController extends Controller
      */
     public function init()
     {
+        Yii::app()->bootstrap->registerCoreCss();
+        Yii::app()->getClientScript()->registerCssFile(Yii::app()->getRequest()->getBaseUrl() . '/css/main.css');
         Yii::app()->getClientScript()->registerCoreScript('jquery');
         Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/oggettoquiz.js');
         Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/history.adapter.jquery.js');

@@ -1,19 +1,19 @@
 <?php
 $this->breadcrumbs=array(
-	'Sections'=>array('index'),
+	'Tests'=>array('index'),
 	$model->title,
 );
 
 $this->menu=array(
 	array('label'=>'Operations'),
-	array('label'=>'List Sections', 'icon' => 'list', 'url'=>array('index')),
-	array('label'=>'Create Section', 'icon' => 'plus', 'url'=>array('create')),
-	array('label'=>'Update Section', 'icon' => 'edit', 'url'=>array('update','id'=>$model->section_id)),
-	array('label'=>'Delete Section', 'icon' => 'trash', 'url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->section_id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'List Tests', 'icon' => 'list', 'url'=>array('index')),
+	array('label'=>'Create Test', 'icon' => 'plus', 'url'=>array('create')),
+	array('label'=>'Update Test', 'icon' => 'edit', 'url'=>array('update','id'=>$model->section_id)),
+	array('label'=>'Delete Test', 'icon' => 'trash', 'url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->section_id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 
-<h1>View Section #<?php echo $model->section_id; ?></h1>
+<h1>View Test #<?php echo $model->section_id; ?></h1>
 
 <?php $this->widget('bootstrap.widgets.TbDetailView',array(
 	'data'=>$model,

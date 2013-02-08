@@ -182,7 +182,7 @@ class Result extends CActiveRecord
     {
         return array(
             'result_id'             => 'Result',
-            'section_id'            => 'Section',
+            'section_id'            => 'Test',
             'user_id'               => 'User',
             'passed_at'             => 'Passed At',
             'results'               => 'Results',

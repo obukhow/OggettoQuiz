@@ -159,7 +159,7 @@ class Question extends CActiveRecord
     {
         return array(
             'question_id' => 'Question',
-            'section_id' => 'Section',
+            'section_id' => 'Test',
             'title' => 'Title',
             'text' => 'Text',
             'theme' => 'Theme',

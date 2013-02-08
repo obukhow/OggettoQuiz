@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'Sections',
+	'Tests',
 );
 
 $this->menu=array(
-	array('label'=>'Create Section','url'=>array('create')),
-	array('label'=>'Manage Section','url'=>array('admin')),
+	array('label'=>'Create Test','url'=>array('create')),
+	array('label'=>'Manage Test','url'=>array('admin')),
 );
 ?>
 

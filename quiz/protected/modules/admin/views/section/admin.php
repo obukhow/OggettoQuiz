@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'Sections'=>array('index'),
+	'Tests'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'Create Section','url'=>array('create')),
+	array('label'=>'Create Test','url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -22,7 +22,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Sections</h1>
+<h1>Manage Tests</h1>
 
 <!-- search-form -->
 

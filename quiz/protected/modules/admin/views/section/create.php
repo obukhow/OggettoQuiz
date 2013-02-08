@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Sections'=>array('index'),
+	'Tests'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Section','url'=>array('index')),
-	array('label'=>'Manage Section','url'=>array('admin')),
+	array('label'=>'List Tests','url'=>array('index')),
+	array('label'=>'Manage Test','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Section</h1>
+<h1>Create Test</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

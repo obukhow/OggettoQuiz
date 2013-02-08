@@ -27,7 +27,7 @@
                     'class' =>'bootstrap.widgets.TbMenu',
                     'items' => array(
                         array('label'=>'Quizes', 'url'=>'#', 'items'=> array(
-                                array('label' => 'Sections', 'url'=>array('/admin/section')),
+                                array('label' => 'Tests', 'url'=>array('/admin/section')),
                                 array('label' => 'Questions', 'url'=>array('/admin/question')),
                                 array('label' => 'Results',   'url'=>array('/admin/result')),
                             )),

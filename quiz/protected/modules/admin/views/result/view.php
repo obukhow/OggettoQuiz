@@ -77,7 +77,7 @@ $this->menu=array(
                 <?php endforeach; ?>
         <?php break;
             case $question::TYPE_FREEFORM: ?>
-            <?php echo CHtml::encode($question->getAnswerText($model->getResult())) ?>
+            <pre><?php echo CHtml::encode($question->getAnswerText($model->getResult())) ?></pre>
     <?php endswitch ?>
 </li>
 <?php endforeach; ?>

@@ -228,9 +228,24 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         }
     }
 
+    this.keyboardNavigation = function(event) {
+        switch (event.keyCode ? event.keyCode : event.which ? event.which : null)
+        {
+            case 0x25:
+                event.preventDefault();
+                this.previous();
+                break;
+            case 0x27:
+                event.preventDefault();
+                this.next();
+                break;
+        }
+    }
+
     this._init = function() {
         this.renderButtons();
         var self = this;
+        document.onkeydown = this.keyboardNavigation.bind(this);
         $(window).bind('beforeunload', function(e) {
                 return self.beforeUnload();
         });

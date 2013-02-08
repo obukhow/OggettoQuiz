@@ -14,7 +14,8 @@
         'htmlOptions' => array(
             'onclick' => 'quiz.previous()',
             'id'      => 'prevBtn',
-            'title'   => 'Предыдущий'
+            'encode'  => false,
+            'title'   => 'Предыдущий (&larr; + Ctrl)'
         )
     ));
     $this->widget('bootstrap.widgets.TbButton', array(
@@ -23,7 +24,8 @@
         'htmlOptions' => array(
             'onclick' => 'quiz.next()',
             'id'      => 'nextBtn',
-            'title'   => 'Следующий'
+            'encode'  => false,
+            'title'   => 'Следующий (Ctrl + &rarr;)'
         )
     ));
 ?>

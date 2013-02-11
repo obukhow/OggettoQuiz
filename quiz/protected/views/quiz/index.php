@@ -2,8 +2,11 @@
 /* @var $this QuizController */
 
 ?>
-<div id="counter" style="display:none;">
-    Question <span id="counter-current"><?php echo $number ?></span> of <span id="counter-total"><?php echo $section->getQuestionsCount() ?></span>
+<div id="progress" style="display:none;">
+    <div id="bar" style="width:1%;"></div>
+    <div id="counter" style="display:none;">
+        Question <span id="counter-current"><?php echo $number ?></span> of <span id="counter-total"><?php echo $section->getQuestionsCount() ?></span>
+    </div>
 </div>
 <div class="btn-toolbar">
     <div class="btn-group">

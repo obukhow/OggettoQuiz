@@ -39,6 +39,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     this.curtain   = $('#curtain');
     this.counter   = $('#counter');
     this.bar       = $('#bar');
+    this.progressInited = false;
     this.question  = '#question';
     this.cache     = new Array();
     this.contentCached = this.contentCurrent = true;
@@ -244,13 +245,19 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         }
     }
     this.initProgress = function() {
+        if (!this.currentQuestion) {
+            return;
+        }
         if ($('#progress')) {
             $('#progress').show();
-            this.updateProgressBar();
+            this.progressInited = true;
         }
     }
 
     this.updateProgressBar = function() {
+        if (!this.progressInited) {
+            this.initProgress();
+        }
         var percent = (this.currentQuestion / this.count) * 100;
         console.log(parseFloat(this.bar[0].style.width));
         if (parseFloat(this.bar[0].style.width) < percent) {
@@ -260,7 +267,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
 
     this._init = function() {
         this.renderButtons();
-        this.initProgress();
+        this.updateProgressBar();
         var self = this;
         document.onkeydown = this.keyboardNavigation.bind(this);
         $(window).bind('beforeunload', function(e) {

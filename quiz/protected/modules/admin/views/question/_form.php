@@ -79,20 +79,25 @@ attributeOption = {
     add : function(data) {
     	if (!data) {
     		data = {
-    			answer_id : 'val_' + this.itemCount,
     			title : '',
     			is_correct: 0,
     		};
     	}
+        if (!data.answer_id) {
+            data.answer_id = 'val_' + this.itemCount;
+        }
+        if (!data.is_correct) {
+            data.is_correct = 0;
+        }
     	data.number = this.itemCount;
     	data.can_delete = (this.itemCount > 1) ? 1 : 0;
+        console.log(data);
     	this.template.tmpl(data).insertBefore('#addButton');
 
         this.bindRemoveButtons();
         this.itemCount++;
     },
     remove : function(element){
-    	dddd = element;
         var row = $(element).parents('div.answer-row');
         row.hide();
         $(element).prevAll('input[type=hidden]').val(1);
@@ -129,8 +134,15 @@ $(document).ready(function() {
 	<?php foreach ($model->answers() as $answer): ?>
 		attributeOption.add(<?php echo $answer->toJson() ?>);
 	<?php endforeach; ?>
+<?php elseif ($answers): ?>
+    <?php foreach ($answers as $answer): ?>
+        attributeOption.add(<?php echo json_encode($answer) ?>);
+    <?php endforeach; ?>
 <?php else: ?>
-	attributeOption.add();
+    attributeOption.add();
+    attributeOption.add();
+    attributeOption.add();
+    attributeOption.add();
 <?php endif; ?>
 </script>
 </div><!-- form -->

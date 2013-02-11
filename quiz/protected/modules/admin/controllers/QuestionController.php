@@ -48,9 +48,9 @@ class QuestionController extends AbstractController
         if ($sectionId = Yii::app()->getRequest()->getParam('section')) {
             $model->section_id = $sectionId;
         }
-
-        $this->render('create',array(
+        $this->render('create', array(
             'model' => $model,
+            'answers' => Yii::app()->getRequest()->getPost('answers'),
         ));
     }
 

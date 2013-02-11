@@ -2,14 +2,14 @@
 /* @var $this QuestionController */
 /* @var $model Question */
 
-$this->breadcrumbs=array(
-	'Questions'=>array('index'),
+$this->breadcrumbs = array(
+	'Questions' => array('index'),
 	'Create',
 );
 
 $this->menu=array(
-    array('label'=>'OPERATIONS'),
-	array('label'=>'List Questions', 'icon' => 'list', 'url'=>array('index')),
+    array('label' => 'OPERATIONS'),
+	array('label' => 'List Questions', 'icon' => 'list', 'url'=>array('index')),
 );
 ?>
 <?php 
@@ -17,4 +17,4 @@ $this->menu=array(
 ?>
 <h1>Create Question</h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model' => $model, 'answers' => $answers)); ?>

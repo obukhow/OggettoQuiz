@@ -22,6 +22,8 @@ class Question extends CActiveRecord
     const TYPE_FREEFORM    = 2;
     const TYPE_POLL        = 3;
 
+    public $answers_data;
+
     /**
      * Returns the static model of the specified AR class.
      * @param string $className active record class name.
@@ -231,10 +233,10 @@ class Question extends CActiveRecord
             }
         }
         if ($correctCount == 0) {
-            throw new CException('One of answers should be marked as correct!');
+            $this->addError('answers', 'One of answers should be marked as correct!');
         }
         if ($correctCount > 1 && $this->type == self::TYPE_ONECHOICE) {
-            throw new CException('For this type of question only one answer could be marked as correct!');
+            $this->addError('answers', 'For this type of question only one answer could be marked as correct!');
         }
         return true;
     }
@@ -261,5 +263,22 @@ class Question extends CActiveRecord
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,
         ));
+    }
+
+
+    /**
+     * This method is invoked before validation starts.
+     * The default implementation calls {@link onBeforeValidate} to raise an event.
+     * You may override this method to do preliminary checks before validation.
+     * Make sure the parent implementation is invoked so that the event can be raised.
+     * @return boolean whether validation should be executed. Defaults to true.
+     * If false is returned, the validation will stop and the model is considered invalid.
+     */
+    protected function beforeValidate()
+    {
+        if ($this->answers_data) {
+            $this->validateAnswersData($this->answers_data);
+        }
+        return parent::beforeValidate();
     }
 }

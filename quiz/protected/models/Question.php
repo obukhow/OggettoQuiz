@@ -281,4 +281,12 @@ class Question extends CActiveRecord
         }
         return parent::beforeValidate();
     }
+
+    protected function afterSave()
+    {
+        if ($this->theme) {
+            Theme::model()->addQuestionTheme($this);
+        }
+        return parent::afterSave();
+    }
 }

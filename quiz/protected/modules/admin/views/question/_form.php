@@ -28,9 +28,24 @@ $method = ($model->getIsNewRecord())
             <?php echo $form->textFieldRow($model,'title', array('class'=>'span6')); ?>
 			<?php echo $form->textAreaRow($model,'text', array('class'=>'span6', 'rows'=>5)); ?>
 			<?php echo $form->radioButtonListRow($model, 'type', $model->getTypeOptions()); ?>
-            <?php echo $form->textFieldRow($model,'theme',array('size'=>60,'maxlength'=>500)); ?>
+            <div class="control-group ">
+                <label class="control-label" for="theme">Theme</label>
+                <div class="controls">
+                <?php $this->widget('bootstrap.widgets.TbTypeahead', array(
+                    'name' => 'Question[theme]',
+                    'options' => array(
+                        'source' => Theme::model()->getTypeaheadOptions($model->section_id),
+                        'matcher' => "js:function(item) {
+                            return ~item.toLowerCase().indexOf(this.query.toLowerCase());
+                        }",
+                    'htmlOptions' => array(
+                        'autocomplete' => 'off'
+                        ),
+                    ),
+                )); ?>
+                </div>
+            </div>
 			<?php echo $form->textFieldRow($model,'position',array('size'=>3,'maxlength'=>10)); ?>
-
 	</fieldset>
 	<legend>Answers</legend>
 		<fieldset id="answers-fieldset">
@@ -91,7 +106,6 @@ attributeOption = {
         }
     	data.number = this.itemCount;
     	data.can_delete = (this.itemCount > 1) ? 1 : 0;
-        console.log(data);
     	this.template.tmpl(data).insertBefore('#addButton');
 
         this.bindRemoveButtons();

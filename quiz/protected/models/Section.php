@@ -104,6 +104,7 @@ class Section extends CActiveRecord
         // class name for the relations automatically generated below.
         return array(
             'questions' => array(self::HAS_MANY, 'Question', 'section_id', 'order' => 'position, question_id ASC'),
+            'themes' => array(self::HAS_MANY, 'Theme', 'section_id'),
         );
     }
 

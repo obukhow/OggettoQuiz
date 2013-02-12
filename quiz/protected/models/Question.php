@@ -213,6 +213,33 @@ class Question extends CActiveRecord
     }
 
     /**
+     * Validate post answers data
+     * 
+     * @return bool
+     */
+    public function validateAnswersData($data)
+    {
+        if ($this->type != self::TYPE_ONECHOICE && $this->type != self::TYPE_MULTICHOICE) {
+            return true;
+        }
+        $correctCount = 0;
+        foreach ($data as $answer) {
+            $isCorrect = (isset($answer['is_correct'])) ? $answer['is_correct'] : 0;
+            $isDeleted = (isset($answer['deleted']) && $answer['deleted'] == 1);
+            if ($isCorrect && !$isDeleted) {
+                $correctCount++;
+            }
+        }
+        if ($correctCount == 0) {
+            throw new CException('One of answers should be marked as correct!');
+        }
+        if ($correctCount > 1 && $this->type == self::TYPE_ONECHOICE) {
+            throw new CException('For this type of question only one answer could be marked as correct!');
+        }
+        return true;
+    }
+
+    /**
      * Retrieves a list of models based on the current search/filter conditions.
      * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
      */

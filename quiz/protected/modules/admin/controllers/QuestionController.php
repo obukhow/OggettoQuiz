@@ -32,8 +32,7 @@ class QuestionController extends AbstractController
 
         if (isset($_POST['Question'])) {
             $model->attributes = $_POST['Question'];
-
-            $result = $model->save();
+            $model->validateAnswersData(Yii::app()->getRequest()->getPost('answers'));
             if ($model->save()) {
                 if (isset($_POST['answers'])) {
                     $this->_saveAnswers($model, $_POST['answers']);

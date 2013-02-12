@@ -21,8 +21,10 @@ $this->menu=array(
 	'attributes'=>array(
 		'section_id',
 		'title',
-                'url',
-                'description'
+        'url',
+        'description',
+        'time_limit',
+        'several_attempts',
 	),
 )); ?>
 

@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Tests','url'=>array('index')),
-	array('label'=>'Create Test','url'=>array('create')),
-	array('label'=>'View Test','url'=>array('view','id'=>$model->section_id)),
-	array('label'=>'Manage Test','url'=>array('admin')),
+	array('label'=>'Operations'),
+	array('label'=>'List Tests', 'icon' => 'list', 'url'=>array('index')),
+	array('label'=>'Create Test', 'icon' => 'plus', 'url'=>array('create')),
+	array('label'=>'View Test', 'icon' => 'eye-open', 'url'=>array('view','id'=>$model->section_id)),
 );
 ?>
 

@@ -60,6 +60,7 @@ class Section extends CActiveRecord
         return array(
             array('title, url', 'required'),
             array('title, time_limit', 'length', 'max'=>255),
+            array('several_attempts', 'length', 'max'=>2),
                         array('description, url', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
@@ -116,6 +117,7 @@ class Section extends CActiveRecord
             'title' => 'Title',
             'url' => 'URL Key',
             'time_limit' => 'Time Limit (minutes)',
+            'several_attempts' => 'Allow Several Attempts',
         );
     }
 

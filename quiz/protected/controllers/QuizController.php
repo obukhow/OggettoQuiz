@@ -186,6 +186,13 @@ class QuizController extends Controller
         if ($section == null) {
             throw new CHttpException(404,'The requested page does not exist.');
         }
+        if (!$section->several_attempts && Yii::app()->controller->action->id != 'result') {
+            $result = Result::model()->findByAttributes(array('section_id' => $section->section_id, 'user_id' => Yii::app()->user->id));
+            if ($result) {
+                Yii::app()->user->setFlash('warning', "Вы уже проходили этот тест!");
+                return $this->redirect('/');
+            }
+        }
         return $section;
     }
 

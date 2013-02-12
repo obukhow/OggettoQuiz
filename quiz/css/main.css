@@ -80,7 +80,7 @@ a {
 
 #sidebar
 {
-	padding: 20px 20px 20px 0;
+	padding: 0px 20px 20px 0;
 }
 
 #footer
@@ -339,7 +339,7 @@ pre {
 	-o-user-select: none;
 	user-select: none;
 }
-#counter {
+#text-counter {
 	position:relative;
 	line-height: 30px;
 	padding-left: 7px;

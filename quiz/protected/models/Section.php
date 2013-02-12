@@ -31,6 +31,19 @@ class Section extends CActiveRecord
     }
 
     /**
+     * Get quiz time limit in seconds
+     *
+     * @return integer
+     */
+    public function getTimeLimit()
+    {
+        if ($this->time_limit) {
+            return $this->time_limit * 60;
+        }
+        return 0;
+    }
+
+    /**
      * Get Section Url
      *
      * @return string
@@ -64,7 +77,7 @@ class Section extends CActiveRecord
                         array('description, url', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('quantity', 'numerical',
+            array('time_limit', 'numerical',
                 'integerOnly' => true,
                 'min' => 0,
                 'max' => 90,

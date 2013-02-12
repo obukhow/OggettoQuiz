@@ -22,7 +22,7 @@ class QuizController extends Controller
     {
         return array(
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('index', 'PostQuestion', 'Result', 'Ajaxquestion', 'question', 'success'),
+                'actions'=>array('index', 'PostQuestion', 'Result', 'Ajaxquestion', 'question', 'initCountdown', 'success'),
                 'users'=>array('@'),
             ),
             array('deny',  // deny all users
@@ -40,9 +40,12 @@ class QuizController extends Controller
     {
         Yii::app()->bootstrap->registerCoreCss();
         Yii::app()->getClientScript()->registerCssFile(Yii::app()->getRequest()->getBaseUrl() . '/css/main.css');
+        Yii::app()->getClientScript()->registerCssFile(Yii::app()->getRequest()->getBaseUrl() . '/css/jquery.countdown.timer.css');
         Yii::app()->getClientScript()->registerCoreScript('jquery');
         Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/oggettoquiz.js');
         Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/history.adapter.jquery.js');
+        Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/jquery.countdown.counter.js');
+        Yii::app()->getClientScript()->registerScriptFile(Yii::app()->getRequest()->getBaseUrl() . '/js/jquery.timeout.interval.idle.js');
         $markdown = new CMarkdown;
         $markdown->registerClientScript();
 
@@ -105,6 +108,25 @@ class QuizController extends Controller
     }
 
     /**
+     * Init countdown for section
+     *
+     * @param string $section section name
+     *
+     * @return void
+     */
+    public function actionInitCountdown($section)
+    {
+        $session = Yii::app()->session;
+        $section = $this->_initSection($section);
+        $question = $session->get('question');
+        if (isset($question[$section->section_id]) && isset($question[$section->section_id]['start'])) {
+            return;
+        }
+        $question[$section->section_id]['start'] = time();
+        $session->add('question', $question);
+    }
+
+    /**
      * Show result action
      *
      * @param string $section  section name
@@ -141,7 +163,7 @@ class QuizController extends Controller
             Yii::app()->end();
         }
 
-        $this->render('index', array('section' => $section, 'question' => $question, 'number' => $id));
+        $this->render('index', array('section' => $section, 'question' => $question, 'limit' => $this->getSectionTimeout($section), 'number' => $id));
     }
 
     /**
@@ -169,8 +191,27 @@ class QuizController extends Controller
     public function actionIndex($section)
     {
         $section = $this->_initSection($section);
-        $this->render('index', array('section' => $section, 'question' => null, 'number' => 0));
+        $this->render('index', array('section' => $section, 'question' => null, 'limit' => $this->getSectionTimeout($section), 'number' => 0));
 
+    }
+
+    /**
+     * Get section time limit
+     *
+     * @param Section $section section
+     *
+     * @return int
+     */
+    public function getSectionTimeout($section)
+    {
+        if (!$section->time_limit) {
+            return 'null';
+        }
+        $session = Yii::app()->session->get('question');
+        if ($session && isset($session[$section->section_id]['start'])) {
+            return $section->getTimeLimit() - (time() - $session[$section->section_id]['start']);
+        }
+        return $section->getTimeLimit();
     }
 
     /**

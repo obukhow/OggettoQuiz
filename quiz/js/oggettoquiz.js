@@ -25,7 +25,7 @@ $(window).load(function () {
 
 });
 
-function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
+function OggettoQuiz(questionsCount, currentQuestion, baseUrl, timeLimit)
 {
     this.count     = questionsCount;
     this.baseUrl   = baseUrl;
@@ -37,7 +37,8 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     this.finishBtn = $('#finishBtn');
     this.content   = $('#page-content');
     this.curtain   = $('#curtain');
-    this.counter   = $('#counter');
+    this.counter   = $('#text-counter');
+    this.countdown = $('#counter');
     this.bar       = $('#bar');
     this.progressInited = false;
     this.question  = '#question';
@@ -46,10 +47,13 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
     this.currentUrl;
     this.manualUpdate = false;
     this.allowLeave = false;
+    this.timeLimit = timeLimit;
 
     this.start = function() {
         this.currentQuestion++;
         this._afterStep();
+        this.updateProgressBar();
+        this.initCountdown();
     }
 
     this.finish = function(){
@@ -58,8 +62,17 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
             this.allowLeave = true;
             this._beforeStep().done( function() {
                 document.location.href = self.baseUrl + '/success';
+        this._afterStep();
             });
         }
+    }
+
+    this.forceFinish = function() {
+        this.allowLeave = true;
+        var self = this;
+        this._beforeStep().done( function() {
+                document.location.href = self.baseUrl + '/success';
+        });
     }
 
     this.next = function() {
@@ -119,7 +132,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
         }
         this.contentCurrent = this.content.serialize();
 
-        if(this.contentCached !== this.contentCurrent) {
+        if(this.contentCached !== this.contentCurrent || this.allowLeave) {
             return $.post(
                 baseUrl + '/postQuestion',
                 this.content.serialize()
@@ -259,16 +272,35 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl)
             this.initProgress();
         }
         var percent = (this.currentQuestion / this.count) * 100;
-        console.log(parseFloat(this.bar[0].style.width));
         if (parseFloat(this.bar[0].style.width) < percent) {
             this.bar.css('width', percent + '%');
         }
+    }
+    this.initCountdown = function() {
+        if (this.timeLimit === null) {
+            return;
+        }
+        if (this.timeLimit < 0) {
+            return this.forceFinish();
+        }
+        this.showCurtain(true);
+        this.countdown.show();
+        $.get(
+            baseUrl + '/initCountdown?t=' + new Date().getTime(),
+            function(response) {
+                CounterInit(this.timeLimit);
+                this.showCurtain(false);
+            }.bind(this)
+        );
     }
 
     this._init = function() {
         this.renderButtons();
         this.updateProgressBar();
         var self = this;
+        if (this.currentQuestion > 1) {
+            this.initCountdown();
+        }
         document.onkeydown = this.keyboardNavigation.bind(this);
         $(window).bind('beforeunload', function(e) {
                 return self.beforeUnload();

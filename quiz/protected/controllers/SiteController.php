@@ -3,6 +3,16 @@
 class SiteController extends Controller
 {
     /**
+     * Include js files
+     *
+     * @return void
+     */
+    public function init()
+    {
+        Yii::app()->bootstrap->registerCoreCss();
+        Yii::app()->getClientScript()->registerCssFile(Yii::app()->getRequest()->getBaseUrl() . '/css/main.css');
+    }
+    /**
      * Declares class-based actions.
      * 
      * @return array

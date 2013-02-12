@@ -59,12 +59,17 @@ class Section extends CActiveRecord
         // will receive user inputs.
         return array(
             array('title, url', 'required'),
-            array('title, time_limit', 'length', 'max'=>255),
-            array('several_attempts', 'length', 'max'=>2),
+            array('title, time_limit', 'length', 'max' => 255),
+            array('several_attempts', 'length', 'max' => 2),
                         array('description, url', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('section_id, title', 'safe', 'on'=>'search'),
+            array('quantity', 'numerical',
+                'integerOnly' => true,
+                'min' => 0,
+                'max' => 90,
+            ),
+            array('section_id, title', 'safe', 'on' => 'search'),
         );
     }
 

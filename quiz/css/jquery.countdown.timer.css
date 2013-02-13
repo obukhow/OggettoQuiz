@@ -1,4 +1,18 @@
-#counter{ background-color: #222;    width: 154px;    height: 59px;    border-radius: 3px;
+#counter{ background-color: #aaa;    width: 112px;    height: 32px;    border-radius: 3px;
     -webkit-border-radius: 3px;
     -opera-border-radius: 3px;
-    -moz-border-radius: 3px;}#counter_item1{    margin-left: 2px;}.counter_item{    width: 30px;    height: 55px;    background: transparent url(images/counter_back.gif) no-repeat;    overflow: hidden;    float: left;    margin-top: 2px;}.counter_item .digit, .counter_item .front{    width: 30px;    height: 55px;    overflow: hidden;}.counter_item .front{    background: transparent url(images/counter_front.png) no-repeat;    position: fixed;    z-index: 10;      }.counter_item .digit_colon{    background: transparent url(images/counter_digits.png) no-repeat 0 0px;            }.counter_item .digit0{    background: transparent url(images/counter_digits.png) no-repeat 0 -55px;        }.counter_item .digit1{    background: transparent url(images/counter_digits.png) no-repeat 0 -110px;        }.counter_item .digit2{    background: transparent url(images/counter_digits.png) no-repeat 0 -165px;        }.counter_item .digit3{    background: transparent url(images/counter_digits.png) no-repeat 0 -220px;        }.counter_item .digit4{    background: transparent url(images/counter_digits.png) no-repeat 0 -275px;        }.counter_item .digit5{    background: transparent url(images/counter_digits.png) no-repeat 0 -330px;        }.counter_item .digit6{    background: transparent url(images/counter_digits.png) no-repeat 0 -385px;        }.counter_item .digit7{    background: transparent url(images/counter_digits.png) no-repeat 0 -440px;        }.counter_item .digit8{    background: transparent url(images/counter_digits.png) no-repeat 0 -495px;        }.counter_item .digit9{    background: transparent url(images/counter_digits.png) no-repeat 0 -550px;        }.counter_item .digit_cherry{    background: transparent url(images/counter_digits.png) no-repeat 0 -605px;        }
+    box-shadow: inset 0px 5px 5px #888;
+    -moz-border-radius: 3px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #999;
+    margin-top: -1px;
+}
+.counter-bg-red {
+    background-color: #f00 !important;
+}
+#counter_item1{    margin-left: 2px;}
+.counter_item{    width: 20px;    height: 30px; overflow: hidden;    float: left;    margin-top: 2px;}
+.counter_item .digit, .counter_item .front{    width: 20px;    height: 30px;    overflow: hidden;}
+.counter_item .front{ position: fixed;    z-index: 10;      }
+.counter_item .digit_colon{ background: transparent url(images/counter_digits.png) no-repeat 7px 0px;            }
+.counter_item .digit0{    background: transparent url(images/counter_digits.png) no-repeat 5px -28px;        }.counter_item .digit1{    background: transparent url(images/counter_digits.png) no-repeat 5px -56px;        }.counter_item .digit2{    background: transparent url(images/counter_digits.png) no-repeat 5px -83px;        }.counter_item .digit3{    background: transparent url(images/counter_digits.png) no-repeat 5px -111px;        }.counter_item .digit4{    background: transparent url(images/counter_digits.png) no-repeat 5px -137px;        }.counter_item .digit5{    background: transparent url(images/counter_digits.png) no-repeat 5px -166px;        }.counter_item .digit6{    background: transparent url(images/counter_digits.png) no-repeat 5px -193px;        }.counter_item .digit7{    background: transparent url(images/counter_digits.png) no-repeat 5px -220px;        }.counter_item .digit8{    background: transparent url(images/counter_digits.png) no-repeat 5px -248px;        }.counter_item .digit9{    background: transparent url(images/counter_digits.png) no-repeat 5px -276px;        }.counter_item .digit_cherry{    background: transparent url(images/counter_digits.png) no-repeat 5px -302px;        }

@@ -298,7 +298,7 @@ function OggettoQuiz(questionsCount, currentQuestion, baseUrl, timeLimit)
         this.renderButtons();
         this.updateProgressBar();
         var self = this;
-        if (this.currentQuestion > 1) {
+        if (this.currentQuestion >= 1) {
             this.initCountdown();
         }
         document.onkeydown = this.keyboardNavigation.bind(this);

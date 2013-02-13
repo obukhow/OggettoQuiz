@@ -40,6 +40,10 @@ var calculateDigits = function() {
     digit3 = Math.floor(secondsLeft / 10);
     digit4 = secondsLeft - digit3 * 10;
 
+    if (minutesLeft == 0 & secondsLeft <= 30) {
+        $('#counter').addClass('counter-bg-red');
+    }
+
     //$("#log").text("minutes left: " + minutesLeft + " | seconds left: " + secondsLeft + " | digits: " + digit1 + digit2 + ":" + digit3 + digit4);
 };
 
@@ -61,11 +65,11 @@ var switchItem = function(itemNumber, digit, capacity) {
 
     removeAllDigits($element);
     $element.addClass("digit" + digit);
-    $element.after('<div class="digit digit' + nextDigit + '" style="margin-top: 55px"></div>');
+    $element.after('<div class="digit digit' + nextDigit + '" style="margin-top: 28px"></div>');
 
     var $newElement = $element.next();
     $element.animate({
-        "margin-top": -55
+        "margin-top": -28
     }, 500, function () { $element.remove(); });
 
     $newElement.animate({

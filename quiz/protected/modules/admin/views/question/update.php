@@ -22,4 +22,4 @@ $this->menu=array(
 
 <h1>Update Question <?php echo $model->question_id; ?></h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model, 'answers' => $answers)); ?>

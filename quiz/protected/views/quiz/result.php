@@ -34,6 +34,6 @@
 <a class="addthis_button_linkedin"></a>
 </div>
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true}; var addthis_share = {'url':'<?php echo $section->getUrl() ?>',
-    'title': '<?php echo sprintf('Wow! Я набрал %s%% в тесте «%s»', $result->getRightAnswersPercent(), $section->title) ?>'};</script>
+    'title': '<?php echo sprintf('Wow! Я набрал %s%% в тесте «%s»', round($result->getRightAnswersPercent()), $section->title) ?>'};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4da8b0a321353eda"></script>
 <!-- AddThis Button END -->

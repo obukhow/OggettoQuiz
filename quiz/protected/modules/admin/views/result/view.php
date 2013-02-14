@@ -34,7 +34,10 @@ $this->menu=array(
 		'total_questions_count',
 		'right_answers_count',
 		'wrong_answers_count',
-		'right_percent_amount',
+        array(
+            'name' => 'right_percent_amount',
+            'value' => $model->right_percent_amount . '%',
+        )
 	),
 )); ?>
 <ol>

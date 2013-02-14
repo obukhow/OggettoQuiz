@@ -63,7 +63,8 @@
         <?php if ($question) {
             $this->renderPartial('question', array('question' => $question));
         } else {
-            echo $section->description;
+            $markdown = new CMarkdownParser;
+            echo $markdown->safeTransform($section->description);
         }
         ?>
     </form>

@@ -12,6 +12,7 @@
         <?php echo $form->textAreaRow($model,'description',array('class'=>'span5','maxlength'=>255)); ?>
         <?php echo $form->textFieldRow($model,'time_limit',array('class'=>'span1','maxlength'=>255)); ?>
         <?php echo $form->checkBoxRow($model, 'several_attempts'); ?>
+        <?php echo $form->checkBoxRow($model, 'show_on_main_page'); ?>
 
 	<div class="form-actions">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(

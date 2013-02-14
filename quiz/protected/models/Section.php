@@ -73,7 +73,7 @@ class Section extends CActiveRecord
         return array(
             array('title, url', 'required'),
             array('title, time_limit', 'length', 'max' => 255),
-            array('several_attempts', 'length', 'max' => 2),
+            array('several_attempts, show_on_main_page', 'length', 'max' => 2),
                         array('description, url', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
@@ -132,11 +132,12 @@ class Section extends CActiveRecord
     public function attributeLabels()
     {
         return array(
-            'section_id' => 'Test',
-            'title' => 'Title',
-            'url' => 'URL Key',
-            'time_limit' => 'Time Limit (minutes)',
-            'several_attempts' => 'Allow Several Attempts',
+            'section_id'        => 'Test',
+            'title'             => 'Title',
+            'url'               => 'URL Key',
+            'time_limit'        => 'Time Limit (minutes)',
+            'several_attempts'  => 'Allow Several Attempts',
+            'show_on_main_page' => 'Show Test On Main Page',
         );
     }
 

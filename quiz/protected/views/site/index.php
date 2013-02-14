@@ -14,8 +14,8 @@ $this->pageTitle=Yii::app()->name;
         <div class="group-iconed tests">
             <h2>Тесты</h2>
             <ul class="inline-list">
-                <?php foreach (Section::model()->findAll() as $section): ?>
-                    <li><a href="<?php echo $section->getUrl() ?>"><?php echo $section->title ?></a></li>
+                <?php foreach ($tests as $test): ?>
+                    <li><a href="<?php echo $test->getUrl() ?>"><?php echo $test->title ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </div>

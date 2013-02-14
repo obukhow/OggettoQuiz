@@ -5,12 +5,14 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Operations'),
+    array('label'=>'Operations'),
     array('label'=>'Run Test', 'icon' => 'play', 'url' => $model->getUrl(), 'linkOptions' => array('target' => '_blank')),
-	array('label'=>'List Tests', 'icon' => 'list', 'url'=>array('index')),
-	array('label'=>'Create Test', 'icon' => 'plus', 'url'=>array('create')),
-	array('label'=>'Update Test', 'icon' => 'edit', 'url'=>array('update','id'=>$model->section_id)),
-	array('label'=>'Delete Test', 'icon' => 'trash', 'url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->section_id),'confirm'=>'Are you sure you want to delete this item?')),
+    array('label'=>'Add Question', 'icon' => 'question-sign', 'url' => array('question/create', 'section' => $model->section_id)),
+    array('label'=>'Update Test', 'icon' => 'edit', 'url'=>array('update','id'=>$model->section_id)),
+    array('label'=>'Delete Test', 'icon' => 'trash', 'url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->section_id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Other'),
+    array('label'=>'List Tests', 'icon' => 'list', 'url'=>array('index')),
+    array('label'=>'Create Test', 'icon' => 'plus', 'url'=>array('create')),
 );
 ?>
 

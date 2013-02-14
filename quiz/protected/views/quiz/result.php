@@ -7,19 +7,21 @@
     <?php endif; ?>
 </h1>
 
-<?php if ($result->getThemes()): ?>
-    <h3>Стоит повторить темы</h3>
-     <p>
-    <?php if (count($result->getThemes()) > 1): ?>
+<?php if ($goodThemes): ?>
+    <h3>Вы хорошо знаете</h3>
         <ul>
-            <?php foreach (array_unique($result->getThemes()) as $theme): ?>
-                <li><?php echo $theme; ?></li>
+            <?php foreach ($goodThemes as $theme): ?>
+                <li><?php printf('%s (%d%%)', $theme->theme, $theme->percent); ?></li>
             <?php endforeach; ?>
         </ul>
-        <?php else: ?>
-            <?php echo current($result->getThemes()) ?>
-        <?php endif; ?>
-    </p>
+<?php endif; ?>
+<?php if ($badThemes): ?>
+    <h3>Стоит повторить</h3>
+        <ul>
+            <?php foreach ($badThemes as $theme): ?>
+                <li><?php printf('%s (%d%%)', $theme->theme, $theme->percent); ?></li>
+            <?php endforeach; ?>
+        </ul>
 <?php endif; ?>
 
 <h3>Поделитесь результатом</h3>

@@ -107,6 +107,19 @@ class Theme extends CActiveRecord
 	}
 
 	/**
+	 * Get Section theme by name
+	 *
+	 * @param int    $sectionId section Id
+	 * @param string $theme     theme
+	 * 
+	 * @return Theme
+	 */
+	public function getSectionThemeByName($sectionId, $theme)
+	{
+		return Theme::model()->findByAttributes(array('section_id' => $sectionId, 'theme' => $theme));
+	}
+
+	/**
 	 * Add new theme entry
 	 * 
 	 * @param Question $question question
@@ -115,7 +128,7 @@ class Theme extends CActiveRecord
 	 */
 	public function addQuestionTheme(Question $question)
 	{
-		$theme = Theme::model()->findByAttributes(array('section_id' => $question->section_id, 'theme' => $question->theme));
+		$theme = $this->getSectionThemeByName($question->section_id, $question->theme);
 		if (! $theme) {
 			$theme = new Theme;
 			$theme->section_id = $question->section_id;

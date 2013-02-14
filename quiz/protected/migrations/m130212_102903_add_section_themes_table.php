@@ -2,7 +2,7 @@
 
 class m130212_102903_add_section_themes_table extends CDbMigration
 {
-public function safeUp()
+    public function safeUp()
 	{
 		$this->createTable('section_themes', array(
 			'theme_id'    => 'pk',

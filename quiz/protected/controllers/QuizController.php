@@ -100,6 +100,7 @@ class QuizController extends Controller
         $result->processResult($question[$section->section_id]);
         
         if ($result->save()) {
+            UserAnswers::model()->saveResultAnswers($result);
             $session->remove('question');
             return $this->redirect($section->getUrl() . '/result/' . $result->result_id);
         }
@@ -138,7 +139,12 @@ class QuizController extends Controller
     {
         $result = Result::model()->findByPk($id);
         $section = $this->_initSection($section);
-        $this->render('result', array('result' => $result, 'section' => $section));
+        $this->render('result', array(
+            'result' => $result,
+            'section' => $section,
+            'goodThemes' => UserAnswers::model()->getGoodThemesResult($id),
+            'badThemes'  => UserAnswers::model()->getBadThemesResult($id),
+        ));
     }
 
     /**

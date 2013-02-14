@@ -3,7 +3,7 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-
+<br />
 <div class="row index">
     <div class="span12">
         <h1>Добро пожаловать в <?php echo CHtml::encode(Yii::app()->name); ?></h1>

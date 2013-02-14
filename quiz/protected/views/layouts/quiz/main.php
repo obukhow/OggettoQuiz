@@ -39,7 +39,7 @@
                         <a href="<?php echo Yii::app()->getRequest()->getBaseUrl(true) ?>" title="<?php echo CHtml::encode(Yii::app()->name); ?>"><img src="<?php echo Yii::app()->request->baseUrl ?>/images/logo_horizontal.png" class="logo"/></a>
                     </div>
                     <div class="span4">
-                        &copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
+                        &copy; <?php echo date('Y'); ?> <a href="http://oggettoweb.com/">Oggetto Web</a>.<br/>
                         All Rights Reserved.<br/>
                     </div>
                     <div class="span4">

@@ -47,7 +47,7 @@
 
 		<div id="footer" class="row">
 			<div class="span8">
-				&copy; <?php echo date('Y'); ?> Oggetto Web.<br/>
+				&copy; <?php echo date('Y'); ?> <a href="http://oggettoweb.com/">Oggetto Web</a>.<br/>
 				All Rights Reserved.<br/>
 			</div>
 			<div class="span4">

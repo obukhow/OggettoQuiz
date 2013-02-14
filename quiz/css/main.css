@@ -33,10 +33,11 @@ body {
   }
 
   /* Set the fixed height of the footer here */
-  #push,
+  #push {
+	height: 142px;
+  }
   #footer {
     height: 111px;
-
   }
 .curtain-container {
 	position: relative;

@@ -102,6 +102,7 @@ class QuestionController extends AbstractController
 
         $this->render('update',array(
             'model'=>$model,
+            'answers' => array(),
         ));
     }
 

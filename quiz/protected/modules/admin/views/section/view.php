@@ -25,6 +25,7 @@ $this->menu=array(
         'description',
         'time_limit',
         'several_attempts',
+        'show_on_main_page',
 	),
 )); ?>
 

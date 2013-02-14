@@ -33,13 +33,15 @@ $method = ($model->getIsNewRecord())
                 <div class="controls">
                 <?php $this->widget('bootstrap.widgets.TbTypeahead', array(
                     'name' => 'Question[theme]',
+                    'model' => $model,
+                    'attribute' => 'theme',
                     'options' => array(
                         'source' => Theme::model()->getTypeaheadOptions($model->section_id),
                         'matcher' => "js:function(item) {
                             return ~item.toLowerCase().indexOf(this.query.toLowerCase());
                         }",
                     'htmlOptions' => array(
-                        'autocomplete' => 'off'
+                        'autocomplete' => 'off',
                         ),
                     ),
                 )); ?>

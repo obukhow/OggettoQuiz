@@ -159,6 +159,7 @@ h3 {
 }
 .tests {
 	background: url('../images/quizicon.png') left top no-repeat;
+	min-height: 100px;
 }
 div.flash-error, div.flash-notice, div.flash-success
 {

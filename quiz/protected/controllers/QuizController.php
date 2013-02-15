@@ -169,6 +169,10 @@ class QuizController extends Controller
             Yii::app()->end();
         }
 
+        $session = Yii::app()->session->get('question');
+        if (!isset($session[$section->section_id])) {
+            return $this->redirect($section->getUrl());
+        }
         $this->render('index', array('section' => $section, 'question' => $question, 'limit' => $this->getSectionTimeout($section), 'number' => $id));
     }
 
@@ -197,6 +201,7 @@ class QuizController extends Controller
     public function actionIndex($section)
     {
         $section = $this->_initSection($section);
+        $session = Yii::app()->session->add('question', array($section->section_id => array()));
         $this->render('index', array('section' => $section, 'question' => null, 'limit' => $this->getSectionTimeout($section), 'number' => 0));
 
     }

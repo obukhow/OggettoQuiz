@@ -31,7 +31,8 @@ class GitHubOAuthService extends EOAuth2Service {
 	);
 
     protected function fetchAttributes() {
-        $info = (object) $this->makeSignedRequest('https://api.github.com/user');
+        $info = (object) $info = (object) $this->makeSignedRequest('https://api.github.com/user',
+            array('headers' => array('User-Agent: OggettoWeb Quiz')));
 
         $this->attributes['id'] = $info->login;
         $this->attributes['name'] = $info->login;
